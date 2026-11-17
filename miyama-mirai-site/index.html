@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>美山 未来思考 — 学校が残れば、町は続く</title>
+<!-- ===== 公開時に書き換える設定（README参照）=====
+     1) SITE_URL : 下の https://blackynakajima.github.io/miyama-mirai/ を公開URLに置換（og:url / og:image / canonical）
+     2) GA_ID    : 下の GA_MEASUREMENT_ID の値を Googleアナリティクスの測定ID（G-で始まる）に置換
+-->
+<meta name="description" content="美山小学校の児童数は100人を下回り、0歳児は6人。京都府南丹市美山町の人口動態と学校の10年推計から、教育を軸にした中山間地の再生モデルを提言します。">
+<meta name="theme-color" content="#2E6662">
+<link rel="canonical" href="https://blackynakajima.github.io/miyama-mirai/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="美山 未来思考">
+<meta property="og:title" content="美山 未来思考 — 学校が残れば、町は続く">
+<meta property="og:description" content="美山小学校の児童数は100人を下回り、0歳児は6人。京都府南丹市美山町の人口動態と学校の10年推計から、教育を軸にした中山間地の再生モデルを提言します。">
+<meta property="og:url" content="https://blackynakajima.github.io/miyama-mirai/">
+<meta property="og:image" content="https://blackynakajima.github.io/miyama-mirai/img/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="「0歳児、6人。学校が残れば、町は続く。」の文字と、あぜ道を駆ける子どもたちの写真">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="美山 未来思考 — 学校が残れば、町は続く">
+<meta name="twitter:description" content="美山小学校の児童数は100人を下回り、0歳児は6人。京都府南丹市美山町の人口動態と学校の10年推計から、教育を軸にした中山間地の再生モデルを提言します。">
+<meta name="twitter:image" content="https://blackynakajima.github.io/miyama-mirai/img/ogp.jpg">
+<!-- Google Analytics 4（測定IDを設定したときだけ読み込む） -->
+<script>
+  window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+  (function(id){
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ dataLayer.push(arguments); };
+    if(!/^G-[A-Z0-9]+$/.test(id) || id === 'G-XXXXXXXXXX') return;
+    var sc = document.createElement('script'); sc.async = true;
+    sc.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+    document.head.appendChild(sc);
+    gtag('js', new Date());
+    gtag('config', id, { send_page_view: false });
+  })(window.GA_MEASUREMENT_ID);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#2E6662;--teal-d:#1F4A47;--teal-l:#5E8C88;--mint:#EEF2EF;
+  --lav:#CBC6E9;--lav-l:#EEEDF8;--vio:#5D559A;--vio-m:#8D86C4;
+  --or:#D9621B;--or-t:#B4500E;--or-l:#FBEFE6;
+  --ink:#23302F;--mut:#5A6664;--line:#DDE3E1;--bg:#FBFBF8;
+  --ease:cubic-bezier(.22,.8,.24,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans JP',sans-serif;font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--teal)}
+button{font-family:inherit}
+.mn{font-family:'Shippori Mincho B1',serif}
+.en{font-family:'Cormorant Garamond',serif;font-style:italic}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+
+/* ---------- header ---------- */
+.hd{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.logo b{font-family:'Shippori Mincho B1',serif;font-size:19px;font-weight:800;letter-spacing:.04em}
+.logo i{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--teal)}
+.logo svg{transition:transform .5s var(--ease)}
+.logo:hover svg{transform:rotate(-12deg) scale(1.08)}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{position:relative;text-decoration:none;color:var(--ink);font-size:14px;font-weight:500;padding:10px 10px}
+.nav a::after{content:"";position:absolute;left:10px;right:10px;bottom:4px;height:2px;background:var(--or);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.nav a:hover::after,.nav a.on::after{transform:scaleX(1)}
+.nav a.cta{background:var(--or);color:#fff;font-weight:700;padding:10px 18px;margin-left:8px;overflow:hidden}
+.nav a.cta::after{display:none}
+.nav a.cta:hover{background:var(--or-t)}
+.menu-btn{display:none;width:44px;height:44px;border:1px solid var(--line);background:#fff;cursor:pointer;align-items:center;justify-content:center}
+.menu-btn span{display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:background .3s}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--ink);transition:transform .35s var(--ease)}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-open .menu-btn span{background:transparent}
+.menu-open .menu-btn span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .menu-btn span::after{transform:translateY(-6px) rotate(-45deg)}
+.progress{position:absolute;left:0;bottom:-1px;height:3px;background:var(--or);width:0;transition:width .1s linear}
+@media (max-width:960px){
+  .menu-btn{display:flex}
+  .nav{position:fixed;inset:68px 0 0 0;background:var(--teal);flex-direction:column;align-items:stretch;padding:24px clamp(20px,5vw,64px);gap:0;transform:translateY(-110%);transition:transform .5s var(--ease);z-index:40}
+  .menu-open .nav{transform:none}
+  .nav a{color:#fff;font-family:'Shippori Mincho B1',serif;font-size:22px;padding:14px 0;border-bottom:1px solid var(--teal-l)}
+  .nav a::after{left:0;right:auto;width:60px;bottom:10px}
+  .nav a.cta{margin:20px 0 0;text-align:center}
+}
+
+/* ---------- page transition ---------- */
+.curtain{position:fixed;inset:0;z-index:60;pointer-events:none;display:grid;grid-template-columns:repeat(4,1fr)}
+.curtain i{background:var(--teal);transform:scaleY(0);transform-origin:bottom;margin:0 -2px;will-change:transform;backface-visibility:hidden}
+.curtain.cover i{animation:cIn .42s var(--ease) forwards}
+.curtain.uncover i{transform:scaleY(1);transform-origin:top;animation:cOut .5s var(--ease) forwards}
+.curtain i:nth-child(2){animation-delay:.05s!important}
+.curtain i:nth-child(3){animation-delay:.1s!important}
+.curtain i:nth-child(4){animation-delay:.15s!important}
+@keyframes cIn{to{transform:scaleY(1)}}
+@keyframes cOut{to{transform:scaleY(0)}}
+.curtain .mark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#fff;font-family:'Shippori Mincho B1',serif;font-size:22px;letter-spacing:.2em;opacity:0;transition:opacity .2s}
+.curtain.cover .mark{opacity:1;transition-delay:.3s}
+.page{display:none}
+.page.show{display:block;animation:pageIn .7s var(--ease) both}
+@keyframes pageIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.rv-l{opacity:0;transform:translateX(-32px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.rv-l.in{opacity:1;transform:none}
+.mask{clip-path:inset(0 100% 0 0);transition:clip-path 1.3s var(--ease);transition-delay:var(--d,0s)}
+.mask.in{clip-path:inset(0 0 0 0)}
+
+/* ---------- common blocks ---------- */
+.lbl{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:var(--teal)}
+.h2{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(28px,4vw,44px);line-height:1.45;margin:0}
+.lead{font-size:16px;line-height:2.05;color:#3B4746;max-width:780px;margin:0}
+.sec{padding:clamp(64px,9vw,112px) 0}
+.stack{display:flex;flex-direction:column;gap:14px}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.src{font-size:12px;color:var(--mut);line-height:1.7;margin:0}
+.stat{border-top:2px solid var(--ink);padding-top:18px}
+.stat .k{font-size:13px;color:var(--mut)}
+.stat .v{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(40px,5vw,54px);line-height:1.2;color:var(--teal)}
+.stat .v small{font-size:.4em}
+.stat .s{font-size:13px;color:var(--mut)}
+.box{background:#fff;border:1px solid var(--line);padding:28px}
+.fig{margin:0;background:#fff;border:1px solid var(--line);padding:clamp(18px,3vw,30px);display:flex;flex-direction:column;gap:14px}
+.fig figcaption{font-weight:700;font-size:15px}
+.legend{display:flex;flex-wrap:wrap;gap:20px;font-size:13px;color:#3B4746}
+.legend span{display:flex;align-items:center;gap:8px}
+.legend i{width:24px;height:4px;display:block}
+.photo{margin:0;overflow:hidden;position:relative}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.photo:hover img{transform:scale(1.05)}
+.cap{font-size:13px;color:var(--mut);margin-top:10px}
+table.t{width:100%;border-collapse:collapse;font-size:14px;background:#fff}
+table.t th,table.t td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.t th{background:var(--mint);font-weight:700;font-size:13px}
+table.t td.n{font-family:'Shippori Mincho B1',serif;font-weight:700;white-space:nowrap}
+table.t tr{transition:background .3s}
+table.t tbody tr:hover{background:var(--lav-l)}
+.tscroll{overflow-x:auto;border:1px solid var(--line)}
+
+/* buttons & links */
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;padding:16px 28px;font-weight:700;font-size:16px;text-decoration:none;color:#fff;background:var(--or);overflow:hidden;border:0;cursor:pointer;isolation:isolate}
+.btn::before{content:"";position:absolute;inset:0;background:var(--teal-d);transform:translateX(-101%);transition:transform .45s var(--ease);z-index:-1}
+.btn:hover::before{transform:none}
+.btn .ar{transition:transform .35s var(--ease)}
+.btn:hover .ar{transform:translateX(6px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn.ghost:hover{color:#fff}
+.btn.light{background:#fff;color:var(--teal-d)}
+.btn.light:hover{color:#fff}
+.tl{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;color:var(--or-t)}
+.tl .ar{transition:transform .35s var(--ease)}
+.tl:hover .ar{transform:translateX(6px)}
+
+/* ---------- hero ---------- */
+.hero{background:var(--teal);color:#fff;overflow:hidden}
+.hero .wrap{padding-top:clamp(48px,8vw,96px);padding-bottom:clamp(48px,7vw,88px);display:flex;flex-direction:column;gap:40px}
+.hero-row{display:flex;flex-wrap:wrap;gap:clamp(32px,5vw,56px);align-items:stretch}
+.hero-txt{flex:1 1 400px;display:flex;flex-direction:column;justify-content:flex-end;gap:28px}
+.hero h1{margin:0;font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(64px,10vw,120px);line-height:1.05;letter-spacing:.02em}
+.hero h1 .cd{display:inline-block;min-width:1.1ch;color:#fff}
+.hero p{margin:0;font-family:'Shippori Mincho B1',serif;font-size:clamp(17px,1.8vw,22px);line-height:1.95;max-width:520px}
+.hero-img{flex:1 1 460px;min-width:0;margin:0}
+.hero-img .photo{aspect-ratio:3/2}
+.hero-img img{animation:kb 9s ease-out both}
+@keyframes kb{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero-img figcaption{font-size:12px;color:#DCE8E6;margin-top:10px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1px;background:var(--teal-l);border:1px solid var(--teal-l)}
+.kpis>div{background:var(--teal);padding:26px;transition:background .4s}
+.kpis>div:hover{background:var(--teal-d)}
+.kpis .k{font-size:13px;color:#DCE8E6}
+.kpis .v{font-family:'Shippori Mincho B1',serif;font-size:clamp(44px,5vw,56px);font-weight:800;line-height:1.25}
+.kpis .v small{font-size:.5em}
+.band{background:var(--lav);color:var(--teal-d)}
+.band .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding-top:22px;padding-bottom:22px}
+.band b{font-family:'Shippori Mincho B1',serif;font-size:clamp(18px,2vw,22px)}
+
+/* chapter hero */
+.ch-hero{position:relative;color:#fff;background:var(--teal);overflow:hidden}
+.ch-hero.or{background:var(--teal-d)}
+.ch-hero.vio{background:#3E3770}
+.ch-hero.img{background:#1b2524}
+.ch-hero.img>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5;animation:kb 10s ease-out both}
+.ch-hero .wrap{position:relative;padding-top:clamp(72px,10vw,128px);padding-bottom:clamp(56px,8vw,96px);display:flex;flex-direction:column;gap:18px}
+.ch-hero .no{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(80px,12vw,160px);line-height:.8;color:rgba(255,255,255,.18);position:absolute;right:clamp(20px,5vw,64px);top:clamp(32px,5vw,56px)}
+.ch-hero .lbl{color:var(--lav)}
+.ch-hero h1{margin:0;font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(34px,5vw,58px);line-height:1.35}
+.ch-hero p{margin:0;max-width:760px;font-size:16px;line-height:2;color:#E6EEEC}
+.ch-hero .q{display:inline-block;align-self:flex-start;background:var(--or);color:#fff;font-weight:700;font-size:14px;padding:6px 14px}
+
+/* chapter cards (home) */
+.chs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px}
+.chc{position:relative;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.chc:hover{transform:translateY(-6px);box-shadow:0 18px 40px -18px rgba(31,74,71,.35)}
+.chc .vis{aspect-ratio:4/3;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}
+.chc .vis img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.chc:hover .vis img{transform:scale(1.08)}
+.chc .vis .big{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:56px;transition:transform .8s var(--ease)}
+.chc:hover .vis .big{transform:scale(1.08)}
+.chc .bd{padding:20px 22px 24px;display:flex;flex-direction:column;gap:6px;flex:1}
+.chc .no{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--teal)}
+.chc .tt{font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:21px;line-height:1.5}
+.chc .qq{font-size:13px;color:var(--or-t);font-weight:700}
+.chc .go{margin-top:auto;padding-top:12px;font-size:13px;font-weight:700;color:var(--teal);display:flex;gap:8px;align-items:center}
+.chc .go .ar{transition:transform .35s var(--ease)}
+.chc:hover .go .ar{transform:translateX(8px)}
+
+/* charts */
+.chart svg{width:100%;height:auto;overflow:visible;display:block}
+.chart svg text{paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round}
+/* Japanese line breaking: break at phrase boundaries, balance headings */
+body{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
+p,li,td,figcaption,.cap,.lead,.d,.qq,.verdict{text-wrap:pretty}
+h1,h2,h3,.h2,.tt,.ch-hero h1,.hero h1,b.mn,.mn b,.note b{text-wrap:balance}
+.nw{white-space:nowrap}
+.fn{font-size:.62em;vertical-align:super;line-height:0;text-decoration:none;color:var(--or-t);font-weight:700;margin-left:1px;padding:0 1px;border-radius:2px;transition:background .25s,color .25s}
+.fn:hover{background:var(--or);color:#fff}
+.ch-hero .fn,.hero .fn,[style*="color:#fff"] .fn{color:#F6C9A8}
+.refs{list-style:none;margin:0;padding:0;counter-reset:none}
+.refs li{display:grid;grid-template-columns:52px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.85;scroll-margin-top:96px}
+.refs li .no{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:var(--or-t);line-height:1.2}
+.refs li .what{display:block;font-size:13px;color:var(--mut);margin-top:4px}
+.refs li a{word-break:break-all}
+.refs li.flash{animation:flash 1.4s ease}
+.formula{font-family:'Shippori Mincho B1',serif;background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);padding:18px 22px;font-size:16px;line-height:2}
+.formula small{display:block;font-family:'Noto Sans JP',sans-serif;font-size:13px;color:var(--mut)}
+.ev h3{margin:0;font-family:'Shippori Mincho B1',serif;font-size:21px}
+.ev p{margin:0;font-size:14px;line-height:2;color:#3B4746}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;margin-right:6px;vertical-align:2px}
+.pill.o{background:var(--mint);color:var(--teal-d)}
+.pill.p{background:var(--lav-l);color:var(--vio)}
+.pill.c{background:var(--or-l);color:var(--or-t)}
+table.t td.hi{background:var(--or-l);font-weight:700}
+.chart .ln{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s var(--ease);transition-delay:var(--d,.1s)}
+.chart.in .ln{stroke-dashoffset:0}
+.chart .fd{opacity:0;transition:opacity .8s ease;transition-delay:var(--d,1.6s)}
+.chart.in .fd{opacity:1}
+.chart .pt{transform-box:fill-box;transform-origin:center;transform:scale(0);transition:transform .5s var(--ease);transition-delay:var(--d,1.4s)}
+.chart.in .pt{transform:scale(1)}
+.bars{display:flex;align-items:flex-end;gap:clamp(10px,2vw,28px);height:260px;padding-top:30px;border-bottom:1px solid var(--ink)}
+.bars .b{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:8px;height:100%}
+.bars .b .col{width:100%;max-width:90px;background:var(--teal);transform:scaleY(0);transform-origin:bottom;transition:transform 1.2s var(--ease);transition-delay:var(--d,0s);position:relative}
+.bars .b .col.hot{background:var(--or)}
+.chart.in .bars .b .col{transform:scaleY(1)}
+.bars .b .num{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(12px,2.2vw,22px);white-space:nowrap;opacity:0;transition:opacity .6s;transition-delay:calc(var(--d,0s) + .8s)}
+.chart.in .bars .b .num{opacity:1}
+.bars-x{display:flex;gap:clamp(10px,2vw,28px);font-size:13px;color:var(--mut)}
+.bars-x span{flex:1;text-align:center}
+.meter{height:30px;background:#E3E8E6;position:relative;overflow:hidden}
+.meter i{position:absolute;inset:0 auto 0 0;width:var(--w);background:var(--or);transform:scaleX(0);transform-origin:left;transition:transform 1.6s var(--ease)}
+.chart.in .meter i{transform:scaleX(1)}
+.meter b{position:absolute;left:12px;top:0;line-height:30px;color:#fff;font-size:13px;z-index:1}
+
+/* timeline */
+.tline{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));border:1px solid var(--ink)}
+.tline>*{padding:22px;border:0;border-right:1px solid var(--ink);display:flex;flex-direction:column;gap:6px;transition:background .4s;background:transparent;text-align:left;font:inherit;color:inherit;text-decoration:none;cursor:pointer}
+.tline>*:last-child{border-right:0}
+.tline>*:hover{background:var(--lav-l)}
+.tline .y{font-family:'Shippori Mincho B1',serif;font-size:24px;font-weight:800}
+.tline .d{font-size:14px;line-height:1.8}
+.tline .go{margin-top:auto;padding-top:8px;font-size:12px;font-weight:700;color:var(--teal);opacity:.75;transform:translateY(4px);transition:opacity .35s,transform .35s var(--ease)}
+.tline>*:hover .go{opacity:1;transform:none}
+.anchor{scroll-margin-top:96px}
+.anchor.flash{animation:flash 1.4s ease}
+@keyframes flash{0%,100%{box-shadow:0 0 0 0 rgba(217,98,27,0)}30%{box-shadow:0 0 0 6px rgba(217,98,27,.35)}}
+.note{display:flex;gap:16px;align-items:flex-start;background:var(--lav-l);border-left:4px solid var(--vio);padding:22px 26px}
+.note svg{flex:none;margin-top:2px}
+.note b{font-size:16px}
+.note p{margin:6px 0 0;font-size:14px;line-height:1.95;color:#3B4746}
+.site-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto!important;padding-top:6px}
+.site-link{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-size:13px;font-weight:700;color:inherit}
+.site-link .ic{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid currentColor;transition:background .35s,color .35s,transform .45s var(--ease)}
+.site-link:hover .ic{transform:rotate(-12deg) scale(1.08)}
+.actor.dark .site-link{color:#fff}
+.actor.dark .site-link:hover .ic{background:#fff;color:var(--teal)}
+.actor.acc .site-link{color:var(--or-t)}
+.actor.acc .site-link:hover .ic{background:var(--or);border-color:var(--or);color:#fff}
+.tline .warn{background:var(--or-l)}.tline .warn .y{color:var(--or-t)}
+.tline .crit{background:#F6DCCB}.tline .crit .y{color:var(--or-t)}
+
+/* dots illustration */
+.dots{display:flex;flex-wrap:wrap;gap:12px;max-width:340px}
+.dots i{width:30px;height:30px;border-radius:50%;background:var(--teal);transition:transform 1.2s var(--ease),opacity 1.2s;transition-delay:var(--d,0s)}
+.dots i.out{background:var(--vio-m)}
+.chart.in .dots i.out{transform:translateX(220px);opacity:0}
+.dots i.kid{width:16px;height:16px;align-self:center;background:var(--or);transform:scale(0);transition-delay:1.6s}
+.chart.in .dots i.kid{transform:scale(1)}
+
+/* cycle */
+.cycle{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:0;counter-reset:c}
+.cycle>div{position:relative;padding:22px 26px 22px 22px;background:#fff;border:1px solid var(--line);margin:-1px 0 0 -1px}
+.cycle>div::before{counter-increment:c;content:counter(c);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px;color:var(--or);display:block;line-height:1}
+.cycle>div::after{content:"→";position:absolute;right:6px;top:50%;transform:translateY(-50%);color:var(--or);font-weight:700}
+.cycle>div:last-child::after{content:"↺";font-size:20px}
+.cycle b{display:block;font-size:15px;margin-top:6px}
+.cycle span{font-size:13px;color:var(--mut);line-height:1.7;display:block;margin-top:4px}
+
+/* scenarios */
+.scn{padding:32px;display:flex;flex-direction:column;gap:14px;transition:transform .5s var(--ease)}
+.scn:hover{transform:translateY(-4px)}
+.scn .row{display:flex;gap:32px;flex-wrap:wrap}
+.scn .k{font-size:13px}
+.scn .v{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:48px;line-height:1.2}
+.cond{background:#fff;padding:24px;display:flex;flex-direction:column;gap:10px;border-bottom:3px solid transparent;transition:border-color .4s,transform .5s var(--ease)}
+.cond:hover{border-color:var(--or);transform:translateY(-4px)}
+.cond .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:38px;color:var(--or);line-height:1}
+.cond b{font-size:16px}
+.cond p{margin:0;font-size:13px;line-height:1.85;color:#3B4746}
+.mosaic figure{margin:0;background:#fff;display:flex;flex-direction:column;overflow:hidden}
+.mosaic .photo{aspect-ratio:4/3}
+.mosaic figcaption{padding:14px 16px;font-size:14px;font-weight:700}
+.mosaic figcaption span{display:block;font-weight:400;font-size:12px;color:var(--mut);margin-top:2px}
+
+/* simulator */
+.sim{background:#fff;border:1px solid var(--line);padding:clamp(20px,4vw,44px);display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,48px)}
+.sim-ctl{flex:1 1 300px;display:flex;flex-direction:column;gap:20px}
+.sim-out{flex:2 1 460px;display:flex;flex-direction:column;gap:22px;min-width:0}
+.stepper{border:1px solid var(--line);padding:20px;display:flex;flex-direction:column;gap:10px}
+.stepper .lab{font-size:15px;font-weight:700}
+.stepper .ctl{display:flex;align-items:center;gap:14px}
+.stepper button{width:48px;height:48px;border:1px solid var(--teal);background:#fff;color:var(--teal);font-size:24px;cursor:pointer;transition:background .25s,color .25s,transform .15s}
+.stepper button:hover{background:var(--teal);color:#fff}
+.stepper button:active{transform:scale(.92)}
+.stepper .val{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:52px;min-width:80px;text-align:center;line-height:1.1}
+.stepper .val.pop{animation:pop .35s var(--ease)}
+@keyframes pop{50%{transform:scale(1.18)}}
+.simk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.simk>div{background:var(--teal);color:#fff;padding:18px}
+.simk>div:last-child{background:#fff;color:var(--ink)}
+.simk .k{font-size:12px;opacity:.85}
+.simk .v{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(32px,4vw,46px);line-height:1.2}
+.hb{display:flex;align-items:center;gap:12px;font-size:13px}
+.hb .l{width:100px;flex:none;color:var(--mut)}
+.hb .tr{flex:1;height:22px;background:var(--mint)}
+.hb .f{height:22px;transition:width .8s var(--ease)}
+.hb .n{width:44px;flex:none;font-weight:700}
+.grades{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px;align-items:end;height:120px}
+.grades div{display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end}
+.grades i{width:100%;display:block;transition:height .8s var(--ease)}
+.grades span{font-size:11px;color:var(--mut)}
+.verdict{padding:16px 20px;font-weight:700;transition:background .5s,color .5s}
+
+/* evidence */
+.case{border-top:2px solid var(--ink);padding-top:20px;display:flex;flex-direction:column;gap:10px}
+.case .v{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(32px,4vw,40px);color:var(--teal);line-height:1.25}
+.case .k{font-size:13px;color:var(--mut)}
+.case p{margin:0;font-size:14px;line-height:1.85;color:#3B4746}
+
+/* who */
+.actor{display:flex;flex-direction:column;gap:12px;padding:0 0 28px;background:#fff;border:1px solid var(--line);transition:transform .5s var(--ease),box-shadow .5s}
+.actor:hover{transform:translateY(-6px);box-shadow:0 18px 40px -20px rgba(31,74,71,.4)}
+.actor .photo{aspect-ratio:3/2}
+.actor>*:not(.photo){margin:0 26px}
+.actor .r{font-size:13px;font-weight:700;color:var(--or-t)}
+.actor h3{margin:0 26px;font-family:'Shippori Mincho B1',serif;font-size:22px}
+.actor p{font-size:14px;line-height:1.9;color:#3B4746}
+.actor.dark{background:var(--teal);border-color:var(--teal);color:#fff}
+.actor.dark p{color:#E6EEEC}.actor.dark .r{color:var(--lav)}
+.actor.acc{border:3px solid var(--or)}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.nums>div{background:#fff;padding:20px}
+.nums .v{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:34px;color:var(--or-t);line-height:1.2}
+.nums .k{font-size:12px;color:var(--mut)}
+.act-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+.act-list div{background:var(--lav-l);padding:20px;transition:background .3s}
+.act-list div:hover{background:var(--lav)}
+.act-list b{display:block;font-size:15px}
+.act-list span{font-size:13px;color:#3B4746;line-height:1.8}
+.eco{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto auto;gap:14px;align-items:center;justify-items:center;max-width:820px;margin:0 auto}
+.eco .node{background:#fff;border:1px solid var(--line);padding:16px 18px;text-align:center;width:100%;font-size:14px;transition:transform .4s var(--ease),border-color .4s}
+.eco .node:hover{transform:scale(1.04);border-color:var(--teal)}
+.eco .node b{display:block;font-family:'Shippori Mincho B1',serif;font-size:17px}
+.eco .core{grid-column:2;grid-row:2;width:190px;height:190px;border-radius:50%;background:var(--or);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:22px;line-height:1.4;animation:breathe 4s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.04);box-shadow:0 0 0 14px rgba(217,98,27,.12)}}
+.eco .n1{grid-column:2;grid-row:1}.eco .n2{grid-column:1;grid-row:2}.eco .n3{grid-column:3;grid-row:2}.eco .n4{grid-column:1;grid-row:3}.eco .n5{grid-column:3;grid-row:3}
+@media (max-width:640px){.eco{grid-template-columns:1fr}.eco .core,.eco .node{grid-column:1!important;grid-row:auto!important}.eco .core{order:-1}}
+
+/* proposal */
+.props{list-style:none;margin:0;padding:0;border-top:1px solid var(--teal-l)}
+.props li{border-bottom:1px solid var(--teal-l)}
+.props button{width:100%;background:none;border:0;color:#fff;text-align:left;display:flex;align-items:center;gap:24px;padding:26px 0;cursor:pointer}
+.props .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:38px;color:#F0A070;width:56px;flex:none}
+.props .tt{font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(18px,2.2vw,24px);flex:1;line-height:1.5;transition:transform .4s var(--ease)}
+.props button:hover .tt{transform:translateX(8px)}
+.props .pm{width:28px;height:28px;flex:none;position:relative}
+.props .pm::before,.props .pm::after{content:"";position:absolute;left:4px;right:4px;top:13px;height:2px;background:#fff;transition:transform .4s var(--ease)}
+.props .pm::after{transform:rotate(90deg)}
+.props li.open .pm::after{transform:rotate(0)}
+.props .body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.props li.open .body{grid-template-rows:1fr}
+.props .body>div{overflow:hidden}
+.props .body p{margin:0 0 26px 80px;color:#DCE8E6;font-size:15px;line-height:2;max-width:760px}
+@media (max-width:640px){.props .body p{margin-left:0}}
+
+/* join */
+.jc{display:flex;flex-direction:column;gap:10px;padding:28px;background:#fff;border:1px solid var(--line);min-height:240px;position:relative;overflow:hidden;transition:color .4s}
+.jc::before{content:"";position:absolute;inset:0;background:var(--teal);transform:translateY(101%);transition:transform .5s var(--ease);z-index:0}
+.jc>*{position:relative;z-index:1}
+.jc:hover::before{transform:none}
+.jc:hover{color:#fff}
+.jc:hover .who,.jc:hover p,.jc:hover .mail{color:#E6EEEC}
+.jc .who{font-size:13px;color:var(--mut);transition:color .4s}
+.jc h3{margin:0;font-family:'Shippori Mincho B1',serif;font-size:22px}
+.jc p{margin:0;font-size:14px;line-height:1.85;color:#3B4746;transition:color .4s}
+.jc a{margin-top:auto;font-weight:700;color:var(--or-t);text-decoration:none;transition:color .4s}
+.jc:hover a{color:#fff}
+.jc .mail{font-size:12px;color:var(--mut)}
+
+.evbar{background:var(--lav-l);border-top:1px solid var(--line)}
+.evbar .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;padding-top:28px;padding-bottom:28px;color:var(--vio)}
+.evbar p{margin:0;flex:1 1 420px;font-size:14px;line-height:1.9;color:#3B4746}
+.evbar b{color:var(--ink)}
+.evbar .tl{color:var(--vio)}
+/* pager */
+.pager{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:36px clamp(20px,5vw,64px);text-decoration:none;color:var(--ink);transition:background .4s}
+.pager a:hover{background:var(--mint)}
+.pager a+a{border-left:1px solid var(--line);text-align:right;align-items:flex-end}
+.pager .k{font-size:12px;color:var(--mut)}
+.pager .t{font-family:'Shippori Mincho B1',serif;font-weight:700;font-size:clamp(17px,2vw,22px)}
+.pager .ar{display:inline-block;transition:transform .35s var(--ease)}
+.pager a:first-child:hover .ar{transform:translateX(-8px)}
+.pager a+a:hover .ar{transform:translateX(8px)}
+
+/* footer */
+.ft{background:var(--ink);color:#C9D2D0;font-size:13px}
+.ft .wrap{padding-top:56px;padding-bottom:40px;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between}
+.ft a{color:#fff;text-decoration:none;opacity:.8;transition:opacity .3s}
+.ft a:hover{opacity:1}
+.ft nav{display:grid;grid-template-columns:repeat(2,auto);gap:6px 32px}
+.ft .cp{width:100%;border-top:1px solid #3B4746;padding-top:20px;font-size:12px;color:#9AA7A5}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .rv,.rv-l{opacity:1;transform:none}.mask{clip-path:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hd" id="hd">
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="美山 未来思考 トップへ">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 30V15" stroke="#2E6662" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M17 16C17 9 12 5 5 5c0 7 5 11 12 11z" fill="#2E6662"/><path d="M17 14c0-6 4-9 11-9 0 6-4 9-11 9z" fill="#5E9A94"/></svg>
+      <b>美山 未来思考</b><i>Miyama 2036</i>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="メニュー" aria-expanded="false" aria-controls="nav"><span></span></button>
+    <nav class="nav" id="nav" aria-label="章">
+      <a href="#why" data-r="why">構造</a>
+      <a href="#data" data-r="data">データ</a>
+      <a href="#voices" data-r="voices">声</a>
+      <a href="#how" data-r="how">処方箋</a>
+      <a href="#evidence" data-r="evidence">先行事例</a>
+      <a href="#who" data-r="who">担い手</a>
+      <a href="#proposal" data-r="proposal">提言</a>
+      <a href="#sources" data-r="sources">出典</a>
+      <a href="#join" data-r="join" class="cta">参加する</a>
+    </nav>
+  </div>
+  <div class="progress" id="prog"></div>
+</header>
+
+<div class="curtain" id="curtain" aria-hidden="true"><i></i><i></i><i></i><i></i><div class="mark" id="cmark"></div></div>
+
+<main id="app">
+
+<!-- ================= HOME ================= -->
+<section class="page" data-page="home" data-title="">
+  <div class="hero">
+    <div class="wrap">
+      <div class="en rv" style="font-size:24px;color:var(--lav)">Chapter 00 — A Quiet Emergency</div>
+      <div class="hero-row">
+        <div class="hero-txt">
+          <h1 class="rv" style="--d:.1s">0歳児、<br><span class="cd" id="cd">6</span>人。</h1>
+          <p class="rv" style="--d:.3s">2026年、美山小学校の児童数は100人を下回りました。このままなら10年後、小学生は約40人。観光の賑わいの裏で、学校と集落の「静かな緊急事態」が進んでいます。</p>
+        </div>
+        <figure class="hero-img rv" style="--d:.2s">
+          <div class="photo"><img src="img/running.jpg" alt="田植え後のあぜ道を駆けていく子どもたちの後ろ姿"></div>
+          <figcaption>この風景を走る子どもが、10年後もいるだろうか。</figcaption>
+        </figure>
+      </div>
+      <div class="kpis rv" style="--d:.4s">
+        <div><div class="k">総人口 2006→2026</div><div class="v">−<span data-count="37">37</span><small>%</small></div><div class="k">5,169人 → 約3,250人</div></div>
+        <div><div class="k">16〜29歳 2006→2026</div><div class="v">−<span data-count="53">53</span><small>%</small></div><div class="k">約640人 → 約300人（推計）</div></div>
+        <div><div class="k">2036年の小学生（現状のまま）</div><div class="v">約<span data-count="40">40</span><small>人</small></div><div class="k">1学年 6〜7人規模へ</div></div>
+      </div>
+    </div>
+    <div class="band"><div class="wrap"><b>それでも、あと「年5〜6世帯」で未来は変えられる。</b><a class="tl" href="#how" style="color:var(--teal-d)">処方箋を見る <span class="ar">→</span></a></div></div>
+  </div>
+
+  <section class="sec wrap stack" style="gap:36px">
+    <div class="stack rv"><div class="lbl">Contents</div><h2 class="h2">8つの章で読む、美山の10年。</h2></div>
+    <div class="chs">
+      <a class="chc rv" href="#why" style="--d:0s"><div class="vis" style="background:var(--teal);color:#fff"><span class="big">−51%</span></div><div class="bd"><span class="no">01 — Why</span><span class="tt">構造を知る</span><span class="qq">なぜ子どもは減り続ける？</span><span class="go">読む <span class="ar">→</span></span></div></a>
+      <a class="chc rv" href="#data" style="--d:.08s"><div class="vis" style="background:var(--mint)"><svg viewBox="0 0 200 120" width="78%" aria-hidden="true"><polyline points="10,15 60,45 110,80 160,92 190,108" fill="none" stroke="#2E6662" stroke-width="5"/><polyline points="160,92 190,100" fill="none" stroke="#D9621B" stroke-width="5" stroke-dasharray="4 6"/></svg></div><div class="bd"><span class="no">02 — Data</span><span class="tt">データで見る美山</span><span class="qq">20年でどう変わり、10年後どうなる？</span><span class="go">読む <span class="ar">→</span></span></div></a>
+      <a class="chc rv" href="#voices" style="--d:.16s"><div class="vis"><img src="img/village.jpg" alt=""></div><div class="bd"><span class="no">03 — Voices</span><span class="tt">地域の声</span><span class="qq">数字の裏で、暮らしに何が？</span><span class="go">読む <span class="ar">→</span></span></div></a>
+      <a class="chc rv" href="#how" style="--d:.24s"><div class="vis"><img src="img/rice-flags.jpg" alt=""></div><div class="bd"><span class="no">04 — How</span><span class="tt">処方箋：教育疎開</span><span class="qq">何をすれば学校が残る？</span><span class="go">読む <span class="ar">→</span></span></div></a>
+      <a class="chc rv" href="#evidence" style="--d:0s"><div class="vis" style="background:var(--lav)"><span class="big" style="color:#3E3770">89→184</span></div><div class="bd"><span class="no">05 — Evidence</span><span class="tt">先行事例</span><span class="qq">本当に人の流れは変えられる？</span><span class="go">読む <span class="ar">→</span></span></div></a>
+      <a class="chc rv" href="#who" style="--d:.08s"><div class="vis"><img src="img/students-kids.jpg" alt=""></div><div class="bd"><span class="no">06 — Who</span><span class="tt">担い手の生態系</span><span class="qq">誰が、どう組んで実行する？</span><span class="go">読む <span class="ar">→</span></span></div></a>
+      <a class="chc rv" href="#proposal" style="--d:.16s"><div class="vis" style="background:var(--teal-d);color:#fff"><span class="big" style="font-size:40px">5つの提言</span></div><div class="bd"><span class="no">07 — Proposal</span><span class="tt">美山から中山間地へ</span><span class="qq">他の地域でも使えるか？</span><span class="go">読む <span class="ar">→</span></span></div></a>
+      <a class="chc rv" href="#join" style="--d:.24s"><div class="vis"><img src="img/postcards.jpg" alt=""></div><div class="bd"><span class="no">08 — Join</span><span class="tt">参加する</span><span class="qq">私にできることは？</span><span class="go">読む <span class="ar">→</span></span></div></a>
+    </div>
+  </section>
+
+  <section style="background:var(--mint)"><div class="wrap sec stack" style="gap:32px">
+    <div class="stack rv"><div class="lbl">Key Figure</div><h2 class="h2">美山小学校は、30年で3分の1に。</h2><p class="lead">1995年に約315人いた小学生は、2026年に約98人。今の0〜5歳の実数から、10年後の教室はすでにほぼ見えています。</p></div>
+    <figure class="fig chart rv" data-chart>
+      <figcaption>美山小・中学校 児童生徒数の推移と10年推計（1995〜2036）</figcaption>
+      <div class="schoolChart"></div>
+      <div class="legend"><span><i style="background:#2E6662"></i>小学生</span><span><i style="background:#8D86C4"></i>中学生</span><span><i style="background:#D9621B"></i>教育移住 年5〜6世帯（小学生）</span><span>実線＝実績・破線＝推計（移住なし）</span></div>
+      <p class="src">実績：南丹市公式統計（2025年）ほか。推計：2025年の学年別人数と未就学児数から、1年ごとに1学年ずつ進級させるコーホート進級法で算出（2032年度以降の入学者は年7人）。<a class="fn" href="#sources" data-ref="r8">[8]</a></p>
+    </figure>
+    <div class="rv"><a class="btn" href="#data">データの章へ <span class="ar">→</span></a></div>
+  </div></section>
+
+  <section class="sec wrap"><div class="grid g2" style="align-items:center;gap:48px">
+    <div class="photo rv mask" style="aspect-ratio:3/2"><img src="img/students-kids.jpg" alt="大学生と美山の子どもたちの集合写真"></div>
+    <div class="stack rv" style="--d:.2s">
+      <div class="lbl" style="color:var(--or-t)">With Wasshoi</div>
+      <h2 class="h2" style="font-size:clamp(24px,3vw,34px)">町の16〜29歳は約300人。<br>美山に通う大学生は約140人。</h2>
+      <p class="lead">京都大学を含む7大学の学生がつくる一般社団法人わっしょいが、美山塾（学習支援）やすくすく（通年の体験教育）で子どもたちに伴走しています。失われた若者世代を、関係人口としての若者が補い始めています。</p>
+      <div><a class="tl" href="#who">担い手の章へ <span class="ar">→</span></a></div>
+    </div>
+  </div></section>
+
+  <section style="background:var(--teal);color:#fff"><div class="wrap sec stack" style="gap:28px;align-items:flex-start">
+    <h2 class="h2 rv">あなたにできる、次の一歩。</h2>
+    <p class="lead rv" style="color:#E6EEEC">空き家を貸す、子どもと関わる、親子で体験する、議論に加わる。一人ひとりの小さな行動が、10年後の教室を決めます。</p>
+    <div class="rv"><a class="btn light" href="#join">参加の方法を見る <span class="ar">→</span></a></div>
+  </div></section>
+</section>
+
+<!-- ================= 01 WHY ================= -->
+<section class="page" data-page="why" data-title="構造を知る">
+  <div class="ch-hero"><div class="wrap">
+    <span class="no">01</span>
+    <div class="lbl rv">Chapter 01 — Why</div>
+    <h1 class="rv" style="--d:.1s">子どもが減るのは、<br>「夫婦が産まない」からではない。</h1>
+    <span class="q rv" style="--d:.2s">問い：なぜ子どもは減り続ける？</span>
+  </div></div>
+
+  <section class="sec wrap stack" style="gap:40px">
+    <p class="lead rv">全国の出生数は半世紀で半分以下になりました。けれど、結婚した夫婦がもつ子どもの数はほとんど変わっていません。減ったのは「カップルの数」と、地方に残る若者そのものです。<a class="fn" href="#sources" data-ref="r1">[1]</a><a class="fn" href="#sources" data-ref="r2">[2]</a></p>
+    <div class="grid g3">
+      <div class="stat rv"><div class="k">出生数 1970→2021</div><div class="v">−<span data-count="58">58</span>%</div><div class="s">193.4万人 → 81.2万人</div></div>
+      <div class="stat rv" style="--d:.1s"><div class="k">婚姻あたりの出生数</div><div class="v"><span data-count="84">84</span>%<small>水準を維持</small></div><div class="s">1.9 → 1.6</div></div>
+      <div class="stat rv" style="--d:.2s"><div class="k">婚姻数 1970→2021</div><div class="v" style="color:var(--or-t)">−<span data-count="51">51</span>%</div><div class="s">102.9万件 → 50.1万件</div></div>
+    </div>
+    <p class="src rv">出典：天野馨南子「日本の少子化に関するデータ解説」ESRI政策フォーラム資料（2023）<a class="fn" href="#sources" data-ref="r2">[2]</a>。数値は同資料が厚生労働省「人口動態統計」から算出したもの。解釈は天野（2024）第1章<a class="fn" href="#sources" data-ref="r1">[1]</a>。</p>
+  </section>
+
+  <section style="background:var(--mint)"><div class="wrap sec grid g2" style="gap:48px;align-items:center">
+    <div class="stack rv">
+      <div class="lbl">Mechanism 1</div>
+      <h2 class="h2" style="font-size:clamp(24px,3vw,34px)">「出生率」は割り算。<br>地方の数字は高く見えやすい。</h2>
+      <p class="lead">合計特殊出生率は、その地域にいる女性を分母に計算します。結婚していない若者が就職期に都市へ出ていくと、地方には子育て中の層が相対的に残り、率は高めに見えます。けれど分母そのものが減っているので、生まれる子どもの数は減り続けます。天野（2024）はこれを第3章「統計的誤解がもたらす地方少子化加速の罠」で論じ、地域の目標は出生率ではなく「子どもの人数」に置くべきだとしています。<a class="fn" href="#sources" data-ref="r1">[1]</a><a class="fn" href="#sources" data-ref="r3">[3]</a></p>
+    </div>
+    <figure class="fig chart rv" data-chart style="--d:.15s">
+      <figcaption>20代の10人のうち6人が都市へ出ると…</figcaption>
+      <div class="dots" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i class="out" style="--d:.2s"></i><i class="out" style="--d:.3s"></i><i class="out" style="--d:.4s"></i><i class="out" style="--d:.5s"></i><i class="out" style="--d:.6s"></i><i class="out" style="--d:.7s"></i><i class="kid"></i><i class="kid"></i>
+      </div>
+      <p class="src" style="font-size:13px;color:#3B4746">残った4人の出生「率」は高くても、生まれる「数」は小さい。率ではなく、若者の人数と流れを見る必要があります。</p>
+    </figure>
+  </div></section>
+
+  <section class="sec wrap stack" style="gap:32px">
+    <div class="stack rv"><div class="lbl">Mechanism 2</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">縮小再生産のスパイラル</h2><p class="lead">若者世代（16〜29歳）が流出すると、10年後の「親になる世代」が消えます。美山はいま、高齢化による自然減が移住による社会増を大きく上回る段階にあります。天野（2024）第4章「地方から流出する結婚適齢期前人口」が示す構造です。<a class="fn" href="#sources" data-ref="r1">[1]</a><a class="fn" href="#sources" data-ref="r4">[4]</a></p></div>
+    <div class="cycle">
+      <div class="rv" style="--d:0s"><b>若者の流出</b><span>進学・就職期に都市へ</span></div>
+      <div class="rv" style="--d:.12s"><b>親世代の減少</b><span>16〜29歳が20年で半減</span></div>
+      <div class="rv" style="--d:.24s"><b>出生数の減少</b><span>0歳児は6人に</span></div>
+      <div class="rv" style="--d:.36s"><b>学校の縮小・再編</b><span>統合、小中一貫へ</span></div>
+      <div class="rv" style="--d:.48s"><b>住む理由の減少</b><span>子育て世帯がさらに離れる</span></div>
+    </div>
+    <div class="box rv" style="border-left:0;border-top:4px solid var(--or)">
+      <b class="mn" style="font-size:20px">だから、子育て支援「だけ」では止まらない。</b>
+      <p style="margin:8px 0 0;font-size:15px;line-height:2;color:#3B4746">いる子育て世帯への給付は大切です。でもそれは、若者が地域に残る・戻る理由にはなりません。若者が離れる最大の要因は「魅力的な仕事の不足」と「生活・教育インフラの格差」。教育を、外から人を呼ぶ“理由”に変える発想が必要です。</p>
+    </div>
+  </section>
+</section>
+
+<!-- ================= 02 DATA ================= -->
+<section class="page" data-page="data" data-title="データで見る美山">
+  <div class="ch-hero"><div class="wrap">
+    <span class="no">02</span>
+    <div class="lbl rv">Chapter 02 — Data</div>
+    <h1 class="rv" style="--d:.1s">人口より速く、<br>「親になる世代」が消えている。</h1>
+    <span class="q rv" style="--d:.2s">問い：20年でどう変わり、10年後どうなる？</span>
+  </div></div>
+
+  <section class="sec wrap stack" style="gap:32px">
+    <div class="grid g2" style="gap:48px;align-items:start">
+      <figure class="fig chart rv" data-chart>
+        <figcaption>合併時（2006年）を100とした指数</figcaption>
+        <svg viewBox="0 0 720 290" role="img" aria-label="総人口は2026年に指数62.9、16〜29歳は46.9まで低下">
+          <g stroke="#E3E8E6"><line x1="40" y1="20" x2="620" y2="20"/><line x1="40" y1="100" x2="620" y2="100"/><line x1="40" y1="180" x2="620" y2="180"/><line x1="40" y1="260" x2="620" y2="260"/></g>
+          <g font-size="12" fill="#5A6664"><text x="4" y="24">100</text><text x="10" y="104">80</text><text x="10" y="184">60</text><text x="10" y="264">40</text><text x="44" y="282">2006</text><text x="176" y="282">2010</text><text x="306" y="282">2015</text><text x="436" y="282">2020</text><text x="560" y="282">2026</text></g>
+          <polyline class="ln" pathLength="1" points="60,20 190,54 320,95 450,136 580,168" fill="none" stroke="#2E6662" stroke-width="3.5"/>
+          <polyline class="ln" pathLength="1" style="--d:.4s" points="60,20 190,89 320,151 450,195 580,232" fill="none" stroke="#D9621B" stroke-width="3.5"/>
+          <circle class="pt" cx="580" cy="168" r="6" fill="#2E6662"/><circle class="pt" style="--d:1.8s" cx="580" cy="232" r="6" fill="#D9621B"/>
+          <text class="fd" x="596" y="173" font-size="14" font-weight="700" fill="#2E6662">総人口 62.9</text>
+          <text class="fd" style="--d:2s" x="596" y="237" font-size="14" font-weight="700" fill="#B4500E">16〜29歳 46.9</text>
+        </svg>
+        <p class="src">出典：南丹市（2021）『地域別まちづくり構想（美山地域編）』・住民基本台帳をもとにした一次資料<a class="fn" href="#sources" data-ref="r5">[5]</a>。16〜29歳は推計値。指数＝各年の人口÷2006年の人口×100。</p>
+      </figure>
+      <div class="stack rv" style="--d:.15s">
+        <p class="mn" style="margin:0;font-size:24px;line-height:1.8;font-weight:700">若者世代の減り方は、総人口の約1.4倍の速さ。<small style="display:block;font-family:'Noto Sans JP';font-size:13px;font-weight:400;color:var(--mut);margin-top:6px">減少率 16〜29歳 53.1%（1−300/640）÷ 総人口 37.1%（1−3,250/5,169）＝ 1.43</small></p>
+        <p class="lead">2006年1月の合併で南丹市が誕生してから約20年。総人口は約37%（約1,900人）減りました。さらに深刻なのは、集落の維持と将来の出産を担う16〜29歳が、合併時の半分以下になったことです。</p>
+      </div>
+    </div>
+    <div class="tscroll rv"><table class="t">
+      <thead><tr><th>年</th><th>総人口</th><th>合併時比</th><th>16〜29歳</th><th>地域社会の変化</th></tr></thead>
+      <tbody>
+        <tr><td class="n">2006（H18）</td><td class="n">5,169人</td><td>100.0%</td><td>約640人</td><td>4町合併で南丹市誕生。市人口の14.3%</td></tr>
+        <tr><td class="n">2010（H22）</td><td class="n">4,726人</td><td>91.4%</td><td>約530人</td><td>高校卒業・就職期の都市流出が定着</td></tr>
+        <tr><td class="n">2015（H27）</td><td class="n">4,197人</td><td>81.2%</td><td>約430人</td><td>高齢化率40%超。旧5小学校の統合を決定</td></tr>
+        <tr><td class="n">2020（R2）</td><td class="n">3,675人</td><td>71.1%</td><td>約360人</td><td>単独・高齢夫婦世帯が増加</td></tr>
+        <tr><td class="n">2026（R8）</td><td class="n">約3,250人</td><td>約62.9%</td><td>約300人</td><td>高齢化率50%目前。草刈り・祭り・消防団の担い手が限界に</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section style="background:var(--mint)"><div class="wrap sec stack" style="gap:32px">
+    <div class="stack rv anchor" id="t-schools"><div class="lbl">Schools</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">5校を1校にしても、減少は止まらなかった。</h2><p class="lead">1990年代半ば、旧5村（知井・平屋・宮島・鶴ヶ岡・大野）それぞれに小学校があり、町全体で小学生約315人・中学生約210人が学んでいました。2016年4月に5校を美山小学校1校に統合して複式学級を解消しましたが<a class="fn" href="#sources" data-ref="r7">[7]</a>、2025年5月には106人<a class="fn" href="#sources" data-ref="r6">[6]</a>、2026年には100人を割り込みました<a class="fn" href="#sources" data-ref="r5">[5]</a>。</p></div>
+    <figure class="fig chart rv" data-chart>
+      <figcaption>美山小・中学校 児童生徒数の推移と10年推計（1995〜2036）</figcaption>
+      <div class="schoolChart"></div>
+      <div class="legend"><span><i style="background:#2E6662"></i>小学生</span><span><i style="background:#8D86C4"></i>中学生</span><span><i style="background:#D9621B"></i>教育移住 年5〜6世帯（小学生）</span><span>実線＝実績・破線＝推計（移住なし）</span></div>
+      <p class="src">実績：1995〜2016年は一次資料<a class="fn" href="#sources" data-ref="r5">[5]</a>、2025年は南丹市「園児・児童・生徒の状況（令和7年5月1日現在）」<a class="fn" href="#sources" data-ref="r6">[6]</a>、2026年の小学生は一次資料の速報値。推計：2025年の学年別人数と未就学児数からのコーホート進級法（計算方法は「データと出典」）<a class="fn" href="#sources" data-ref="r8">[8]</a>。</p>
+    </figure>
+    <div class="tscroll rv"><table class="t">
+      <thead><tr><th>年</th><th>小学生</th><th>中学生</th><th>学校体制と地域への影響</th></tr></thead>
+      <tbody>
+        <tr><td class="n">1995頃</td><td class="n">約315人（5校）</td><td class="n">約210人</td><td>旧5村ごとに小学校。1学年50〜70人規模。地域行事の核</td></tr>
+        <tr><td class="n">2006</td><td class="n">約220人（5校）</td><td class="n">約135人</td><td>合併時。周辺校で複式学級が常態化</td></tr>
+        <tr><td class="n">2016</td><td class="n">127人（1校）</td><td class="n">121人</td><td>美山小学校開校。単学級が復活する一方、周辺4地区から子どもの声が消える</td></tr>
+        <tr><td class="n">2025</td><td class="n">106人（1校）</td><td class="n">75人</td><td>南丹市公式統計（5月1日現在）。学年別 小19・16・11・22・18・20／中23・29・23</td></tr>
+        <tr><td class="n">2026</td><td class="n">約98人（1校）</td><td class="n">—</td><td>100人割れ（一次資料）。1学年15人前後へ。中学校の部活動維持が困難に</td></tr>
+        <tr><td class="n">2036（推計）</td><td class="n">約41人</td><td class="n">約34人</td><td>移住がない場合。小学校は1学年6〜7人に</td></tr>
+      </tbody>
+    </table></div>
+  </div></section>
+
+  <section class="sec wrap stack" style="gap:32px">
+    <div class="stack rv anchor" id="t-born"><div class="lbl">Already Born</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">すでに生まれている子どもの数が、未来を決めている。</h2><p class="lead">美山地域の未就学児は、3〜5歳児が各16〜20人。それに対して2歳児は10人、1歳児と0歳児は6人です。この子どもたちが順番に入学するため、2029年度以降の入学者の減少はすでに確定しています。<a class="fn" href="#sources" data-ref="r8">[8]</a></p></div>
+    <figure class="fig chart rv" data-chart>
+      <figcaption>美山地域の未就学児数（学年別）</figcaption>
+      <div class="bars">
+        <div class="b"><span class="num">16〜20</span><div class="col" style="height:90%;--d:0s"></div></div>
+        <div class="b"><span class="num">16〜20</span><div class="col" style="height:90%;--d:.1s"></div></div>
+        <div class="b"><span class="num">16〜20</span><div class="col" style="height:90%;--d:.2s"></div></div>
+        <div class="b"><span class="num">10</span><div class="col" style="height:50%;--d:.3s"></div></div>
+        <div class="b"><span class="num">6</span><div class="col hot" style="height:30%;--d:.4s"></div></div>
+        <div class="b"><span class="num">6</span><div class="col hot" style="height:30%;--d:.5s"></div></div>
+      </div>
+      <div class="bars-x"><span>5歳</span><span>4歳</span><span>3歳</span><span>2歳</span><span>1歳</span><span>0歳</span></div>
+      <p class="src">出典：令和7年度第1回南丹市総合教育会議 幼児教育・保育推進課資料（一次資料経由）<a class="fn" href="#sources" data-ref="r8">[8]</a>。3〜5歳は各年齢16〜20人（資料の幅）で表示。</p>
+    </figure>
+    <div class="grid g2 anchor" id="t-risk">
+      <div class="box rv"><b class="mn" style="font-size:19px">他地域への吸収・廃校にはなりにくい</b><p style="margin:10px 0 0;font-size:14px;line-height:1.95;color:#3B4746">美山は約340㎢の広い山間地域で、統合後の美山小はスクールバス4路線で通学しています。<a class="fn" href="#sources" data-ref="r9">[9]</a>奥部（知井・芦生や鶴ヶ岡）から隣の日吉地域へ通うと片道1時間〜1時間半以上かかり、積雪時の安全面からも現実的ではありません。</p></div>
+      <div class="box rv" style="--d:.1s;border-top:4px solid var(--or)"><b class="mn" style="font-size:19px">小中一貫校（義務教育学校）への再編は避けにくい</b><p style="margin:10px 0 0;font-size:14px;line-height:1.95;color:#3B4746">推計では2036年に小学生約41人（1学年6〜7人）、中学生約34人。中学生はその後も減り続け、年7人の出生が続けば約21人（1学年7人）になります。小学校では2学年の合計が16人以下になると複式学級の基準に当たります<a class="fn" href="#sources" data-ref="r10">[10]</a>。こうなれば今の小・中学校の体制は維持できず、2030年代前半〜半ばに施設一体型の9年制への再編が避けられなくなります。</p></div>
+    </div>
+    <div class="tline rv">
+      <button type="button" data-scroll="t-schools"><span class="y">2016</span><span class="d">旧5小学校を美山小1校に統合</span><span class="go">統合前後の推移を見る ↑</span></button>
+      <button type="button" data-scroll="t-born"><span class="y">2026</span><span class="d">小学生100人割れ／0歳児6人</span><span class="go">未就学児の実数を見る ↑</span></button>
+      <button type="button" class="warn" data-scroll="t-risk"><span class="y">2030年代前半</span><span class="d">小中一貫（義務教育学校）への再編が現実に</span><span class="go">再編リスクの分析を見る ↑</span></button>
+      <a class="crit" href="#how"><span class="y">出生2〜3人/年</span><span class="d">町内から学校が消えるリスク</span><span class="go">避けるための処方箋へ →</span></a>
+    </div>
+  </section>
+</section>
+
+<!-- ================= 03 VOICES ================= -->
+<section class="page" data-page="voices" data-title="地域の声">
+  <div class="ch-hero img"><img src="img/village.jpg" alt=""><div class="wrap">
+    <span class="no">03</span>
+    <div class="lbl rv">Chapter 03 — Voices</div>
+    <h1 class="rv" style="--d:.1s">観光客の訪れる風景を、<br>守ってきたのは集落の暮らしです。</h1>
+    <span class="q rv" style="--d:.2s">問い：数字の裏で、暮らしに何が？</span>
+  </div></div>
+
+  <section class="sec wrap stack" style="gap:36px">
+    <p class="lead rv">かやぶきの里に人が集まる一方で、田の草刈り、祭り、消防団を担ってきた人たちは年々少なくなっています。この章では、数字の向こうにある暮らしと、学びを手渡してきた人たちの声を集めていきます。</p>
+    <div class="grid g3">
+      <figure class="rv" style="margin:0"><div class="photo" style="aspect-ratio:3/2"><img src="img/elder-mochi.jpg" alt="地域の方と一緒に餅をつく女の子"></div><figcaption class="cap">餅つき。技と段取りは、世代から世代へ手渡されてきた。</figcaption></figure>
+      <figure class="rv" style="margin:0;--d:.1s"><div class="photo" style="aspect-ratio:3/2"><img src="img/sushi.jpg" alt="地域のお母さんに鯖寿司づくりを教わる子ども"></div><figcaption class="cap">郷土の味を教わる時間。教える人も、受け取る子どもも減っている。</figcaption></figure>
+      <figure class="rv" style="margin:0;--d:.2s"><div class="photo" style="aspect-ratio:3/2"><img src="img/harvest.jpg" alt="地域のお年寄りと子どもたちの稲刈り"></div><figcaption class="cap">稲刈り。田んぼは、いちばん身近な教室だった。</figcaption></figure>
+    </div>
+  </section>
+
+  <section style="background:var(--lav-l)"><div class="wrap sec stack" style="gap:28px">
+    <div class="stack rv"><div class="lbl" style="color:var(--vio)">Five Villages</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">旧5村の声（インタビュー準備中）</h2><p class="lead">各地区で、学校・祭り・消防団・農業に関わってきた方にお話を伺い、順次掲載します。</p></div>
+    <div class="grid g4" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))">
+      <div class="box rv"><div class="mn" style="font-size:24px;font-weight:800">知井</div><p class="src" style="margin-top:6px">掲載準備中</p></div>
+      <div class="box rv" style="--d:.06s"><div class="mn" style="font-size:24px;font-weight:800">平屋</div><p class="src" style="margin-top:6px">掲載準備中</p></div>
+      <div class="box rv" style="--d:.12s"><div class="mn" style="font-size:24px;font-weight:800">宮島</div><p class="src" style="margin-top:6px">掲載準備中</p></div>
+      <div class="box rv" style="--d:.18s"><div class="mn" style="font-size:24px;font-weight:800">鶴ヶ岡</div><p class="src" style="margin-top:6px">掲載準備中</p></div>
+      <div class="box rv" style="--d:.24s"><div class="mn" style="font-size:24px;font-weight:800">大野</div><p class="src" style="margin-top:6px">掲載準備中</p></div>
+    </div>
+    <div class="box rv"><b style="font-size:15px">インタビューでお聞きすること</b>
+      <ul style="margin:10px 0 0;padding-left:1.2em;font-size:14px;line-height:2;color:#3B4746">
+        <li>子どものころ、地区の学校と行事はどんな姿だったか</li>
+        <li>いま、担い手が足りないと感じる場面はどこか</li>
+        <li>外から来た家族や大学生と、どんな関わり方ならできそうか</li>
+        <li>10年後の地区に、何が残っていてほしいか</li>
+      </ul>
+    </div>
+  </div></section>
+</section>
+
+<!-- ================= 04 HOW ================= -->
+<section class="page" data-page="how" data-title="処方箋：教育疎開">
+  <div class="ch-hero img"><img src="img/rice-flags.jpg" alt=""><div class="wrap">
+    <span class="no">04</span>
+    <div class="lbl rv">Chapter 04 — How</div>
+    <h1 class="rv" style="--d:.1s">「子ども時代は、田舎で学ぶ」<br>── 教育疎開という処方箋</h1>
+    <span class="q rv" style="--d:.2s">問い：何をすれば学校が残る？</span>
+  </div></div>
+
+  <section class="sec wrap stack" style="gap:36px">
+    <p class="lead rv">地元の出生だけでは学校は残りません。必要なのは何百人もの移住ではなく、京阪神から車で1〜1.5時間という距離を生かした、毎年5〜6世帯の「教育を理由にした移住」です。NPO法人森の教育プロジェクトが掲げる「教育疎開」の構想<a class="fn" href="#sources" data-ref="r19">[19]</a>を、数字で確かめます。</p>
+    <div class="grid g2">
+      <div class="scn rv" style="background:#fff;border:1px solid var(--line);border-top:6px solid #9AA7A5">
+        <b style="font-size:14px;color:var(--mut)">現状のままのシナリオ（2036年）</b>
+        <div class="row"><div><div class="k" style="color:var(--mut)">小学生</div><div class="v">約<span data-count="41">41</span></div></div><div><div class="k" style="color:var(--mut)">中学生</div><div class="v">約<span data-count="34">34</span></div></div></div>
+        <p style="margin:0;font-size:14px;line-height:1.8;color:#3B4746">新規入学 年約7人（地元出生のみ）。中学生はその後も約21人まで減少。複式学級化・小中統合再編が避けられない。<a class="fn" href="#sources" data-ref="r8">[8]</a></p>
+      </div>
+      <div class="scn rv" style="--d:.12s;background:var(--teal);color:#fff;border-top:6px solid var(--or)">
+        <b style="font-size:14px;color:#F6DCCB">教育疎開 達成シナリオ（2036年）</b>
+        <div class="row"><div><div class="k" style="color:#DCE8E6">小学生</div><div class="v">約<span data-count="89">89</span></div></div><div><div class="k" style="color:#DCE8E6">中学生</div><div class="v">約<span data-count="58">58</span></div></div></div>
+        <p style="margin:0;font-size:14px;line-height:1.8">2027年度から毎年、移住の子ども8人（5〜6世帯）が加わる想定。新規入学は年約15人（地元7人＋移住8人）となり、長期的にも小学生約90人・中学生約45人で全学年の単学級を維持。<a class="fn" href="#sources" data-ref="r8">[8]</a></p>
+      </div>
+    </div>
+
+    <div class="box chart rv" data-chart style="display:flex;flex-wrap:wrap;gap:32px;align-items:center">
+      <div style="flex:1 1 380px" class="stack">
+        <b style="font-size:13px;color:var(--vio)">全国の知見と照合する</b>
+        <p class="mn" style="margin:0;font-size:22px;line-height:1.7;font-weight:700">年5〜6世帯 ≒ 人口の約0.6%。「田園回帰1%戦略」の範囲内です。</p>
+        <p style="margin:0;font-size:14px;line-height:1.95;color:#3B4746">藤山浩氏の分析では、毎年人口の1%程度の定住増加（20代前半の男女や30代の子連れ夫婦など）で、人口と子どもの数を安定させられるとされます。美山なら1%は年約32人。教育疎開の目標（約18〜21人）はその6割ほどです。<a class="fn" href="#sources" data-ref="r11">[11]</a><a class="fn" href="#sources" data-ref="r12">[12]</a></p>
+      </div>
+      <div style="flex:1 1 340px" class="stack">
+        <div class="meter" style="--w:62%"><i></i><b>教育疎開 約20人/年</b></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--mut)"><span>0</span><span>1%ライン ≒ 32人/年</span></div>
+        <p class="src">1世帯3.5人で概算。出典：藤山浩『田園回帰1%戦略』（2015）ほか。</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--mint)"><div class="wrap sec stack" style="gap:28px">
+    <div class="stack rv"><div class="lbl" style="color:var(--or-t)">Simulator</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">10年後の教室を、自分で動かしてみる</h2><p class="lead">移住する世帯数と、地元の出生数を変えると、2036年の教室の姿が変わります。</p></div>
+    <div class="sim rv" id="sim">
+      <div class="sim-ctl">
+        <div class="stepper"><span class="lab" id="lh">教育移住の世帯数（毎年）</span>
+          <div class="ctl"><button type="button" data-k="h" data-v="-1" aria-label="世帯数を減らす">−</button><span class="val" id="vh" style="color:var(--or-t)" aria-live="polite">5</span><button type="button" data-k="h" data-v="1" aria-label="世帯数を増やす">＋</button><span style="font-size:14px;color:var(--mut)">世帯/年</span></div>
+          <span style="font-size:13px;color:#3B4746">移住する子ども：年 <b id="vk">7.0</b> 人</span></div>
+        <div class="stepper"><span class="lab">地元の年間出生数</span>
+          <div class="ctl"><button type="button" data-k="b" data-v="-1" aria-label="出生数を減らす">−</button><span class="val" id="vb" style="color:var(--teal)" aria-live="polite">7</span><button type="button" data-k="b" data-v="1" aria-label="出生数を増やす">＋</button><span style="font-size:14px;color:var(--mut)">人/年</span></div>
+          <span style="font-size:13px;color:#3B4746">標準推計は7人。現在の0歳児は6人。</span></div>
+        <div style="background:var(--lav-l);padding:18px 20px;font-size:13px;line-height:1.9">移住者は人口の <b id="vs">0.54</b>%（1世帯3.5人で概算）。<br>田園回帰1%の目安（年約32人）の <b id="vo">54</b>%。</div>
+      </div>
+      <div class="sim-out">
+        <div class="simk"><div><div class="k">将来の小学生（定常時）</div><div class="v"><span id="ve">84</span><small style="font-size:.45em">人</small></div></div><div><div class="k">将来の中学生（定常時）</div><div class="v"><span id="vm">42</span><small style="font-size:.45em">人</small></div></div><div><div class="k" style="color:var(--mut)">1学年あたり</div><div class="v" style="color:var(--teal)"><span id="vp">14.0</span><small style="font-size:.45em">人</small></div></div></div>
+        <div class="stack" style="gap:10px">
+          <b style="font-size:14px">小学生数の比較（2026年＝98人）</b>
+          <div class="hb"><span class="l">2026年 実数</span><div class="tr"><div class="f" style="width:65%;background:#9AA7A5"></div></div><span class="n">98</span></div>
+          <div class="hb"><span class="l">現状のまま</span><div class="tr"><div class="f" style="width:28%;background:var(--vio-m)"></div></div><span class="n">約42</span></div>
+          <div class="hb"><span class="l" style="color:var(--or-t);font-weight:700">あなたの設定</span><div class="tr"><div class="f" id="fb" style="width:0;background:var(--or)"></div></div><span class="n" id="fbn">84</span></div>
+        </div>
+        <div class="stack" style="gap:10px"><b style="font-size:14px">学年ごとの教室（小1〜中3）</b><div class="grades" id="grades"></div></div>
+        <div class="verdict" id="verdict"></div>
+        <p class="src">定常状態（移住が始まって9年後以降）の概算：1学年の人数＝地元出生数＋移住世帯数×1.4人、小学生＝1学年×6、中学生＝1学年×3。複式学級の判定は義務標準法の小学校基準（2学年の合計16人以下、1年生を含む場合は8人以下）による<a class="fn" href="#sources" data-ref="r10">[10]</a>。</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="sec wrap stack" style="gap:28px">
+    <div class="stack rv"><div class="lbl" style="color:var(--or-t)">Conditions</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">実装のための4つの条件</h2></div>
+    <div class="grid g4">
+      <div class="cond rv"><span class="n">1</span><b>毎年5〜6世帯の目標設定</b><p>京阪神（車1〜1.5時間圏）から、教育意識の高い家族を。子ども7〜8人/年で美山小の90人規模と単学級を維持。</p></div>
+      <div class="cond rv" style="--d:.08s"><span class="n">2</span><b>課外から、公教育そのものへ</b><p>デンマーク交流・英語・プログラミング・自転車教育を、放課後活動にとどめず特認校制度やカリキュラムと一体化。</p></div>
+      <div class="cond rv" style="--d:.16s"><span class="n">3</span><b>小中9年の定期借家バンク</b><p>永住ではなく「9年間」の移住を望む家族へ。すぐ入居できる改修済み空き家を毎年5〜6戸、安定して供給。</p></div>
+      <div class="cond rv" style="--d:.24s"><span class="n">4</span><b>リモートワークの環境</b><p>都市の企業に勤めたまま美山で子育てできる通信環境とコワーキング拠点で、移住の経済的なハードルを下げる。</p></div>
+    </div>
+    <div class="stack rv" style="margin-top:24px"><b class="mn" style="font-size:22px">美山にしかない学び ── 課外から、公教育の柱へ</b></div>
+    <div class="grid g4 mosaic">
+      <figure class="rv"><div class="photo"><img src="img/denmark.jpg" alt="デンマークの学校で両国の旗を持つ生徒たち"></div><figcaption>デンマーク国際交流<span>プチ短期留学・相互訪問</span></figcaption></figure>
+      <figure class="rv" style="--d:.08s"><div class="photo"><img src="img/programming.jpg" alt="タブレットでプログラミングに取り組む子どもたち"></div><figcaption>プログラミング・英語<span>ITと語学への入口</span></figcaption></figure>
+      <figure class="rv" style="--d:.16s"><div class="photo"><img src="img/cycling.jpg" alt="かやぶきの里の前で自転車を掲げる子どもたち"></div><figcaption>自転車教育<span>ウィーラースクール</span></figcaption></figure>
+      <figure class="rv" style="--d:.24s"><div class="photo"><img src="img/river.jpg" alt="ライフジャケットを着て沢で網を持つ子どもたち"></div><figcaption>森と川のフィールド<span>沢登り・生きもの観察</span></figcaption></figure>
+    </div>
+  </section>
+</section>
+
+<!-- ================= 05 EVIDENCE ================= -->
+<section class="page" data-page="evidence" data-title="先行事例">
+  <div class="ch-hero vio"><div class="wrap">
+    <span class="no">05</span>
+    <div class="lbl rv">Chapter 05 — Evidence</div>
+    <h1 class="rv" style="--d:.1s">学校を軸に、人の流れを<br>変えた地域はすでにある。</h1>
+    <span class="q rv" style="--d:.2s">問い：本当に人の流れは変えられる？</span>
+  </div></div>
+
+  <section class="sec wrap stack" style="gap:40px">
+    <div class="grid g4">
+      <article class="case rv"><span class="k">島根県 海士町ほか｜高校魅力化</span><span class="v"><span data-count="89">89</span>→<span data-count="184">184</span><small style="font-size:.45em">人</small></span><p>統廃合寸前だった隠岐島前高校の生徒数が、地域と協働した魅力化で約2倍に（2008→2017年）。県外からの志願者も増えた。<a class="fn" href="#sources" data-ref="r13">[13]</a></p></article>
+      <article class="case rv" style="--d:.08s"><span class="k">山梨県 丹波山村｜親子山村留学</span><span class="v">半数以上</span><p>小学生19人・中学生7人のうち半数以上が、山村留学で移住した家庭の子ども（2026年11月）。1992年から続く制度。<a class="fn" href="#sources" data-ref="r14">[14]</a></p></article>
+      <article class="case rv" style="--d:.16s"><span class="k">徳島県 美波町ほか｜デュアルスクール</span><span class="v">住民票そのまま</span><p>区域外就学制度を使い、都市と地方の学校を行き来できる。“お試し教育移住”の入口として、2026年に国交省の実証調査にも採択。<a class="fn" href="#sources" data-ref="r15">[15]</a><a class="fn" href="#sources" data-ref="r16">[16]</a></p></article>
+      <article class="case rv" style="--d:.24s"><span class="k">全国｜地域みらい留学</span><span class="v"><span data-count="1127">1,127</span><small style="font-size:.45em">人/年</small></span><p>都道府県外から地方の公立高校へ進学した生徒数（2026年度）。参画校は約190校。学びで地域を選ぶ層は増えている。<a class="fn" href="#sources" data-ref="r17">[17]</a></p></article>
+    </div>
+  </section>
+
+  <section style="background:var(--lav-l)"><div class="wrap sec stack" style="gap:28px">
+    <div class="stack rv"><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">成功事例に共通する条件と、美山にすでにある芽</h2></div>
+    <div class="tscroll rv"><table class="t">
+      <thead><tr><th>共通する条件</th><th>先行事例</th><th>美山にすでにあるもの</th></tr></thead>
+      <tbody>
+        <tr><td><b>学校を「選ばれる理由」に</b></td><td>隠岐島前高校の魅力化</td><td>デンマーク交流、自転車教育、プログラミング</td></tr>
+        <tr><td><b>受け入れのコーディネーター</b></td><td>島前高校の教育魅力化コーディネーター</td><td>NPO法人 森の教育プロジェクト</td></tr>
+        <tr><td><b>お試しの入口</b></td><td>デュアルスクール（区域外就学）</td><td>体験・短期滞在プログラム（構想段階）</td></tr>
+        <tr><td><b>若い担い手</b></td><td>地域みらい留学の高校生</td><td>一般社団法人わっしょい（7大学・約140名）</td></tr>
+        <tr><td><b>住まい</b></td><td>山村留学の住宅確保</td><td>空き家（9年定期借家の仕組みは今後）</td></tr>
+      </tbody>
+    </table></div>
+  </div></section>
+</section>
+
+<!-- ================= 06 WHO ================= -->
+<section class="page" data-page="who" data-title="担い手の生態系">
+  <div class="ch-hero img"><img src="img/students-kids.jpg" alt=""><div class="wrap">
+    <span class="no">06</span>
+    <div class="lbl rv">Chapter 06 — Who</div>
+    <h1 class="rv" style="--d:.1s">子どもを真ん中に、<br>町・大学・NPOがつながる。</h1>
+    <span class="q rv" style="--d:.2s">問い：誰が、どう組んで実行する？</span>
+  </div></div>
+
+  <section class="sec wrap stack" style="gap:40px">
+    <div class="grid g3">
+      <article class="actor dark rv"><div class="photo"><img src="img/rice-boy.jpg" alt="泥だらけで田植えをする子どもたち"></div><span class="r">教育コンテンツ・国際交流</span><h3>NPO法人 森の教育プロジェクト</h3><p>「教育疎開」の構想主体。デンマーク交流、自転車教育、里山・農村体験など、都市にない学びを美山でつくる。</p><div class="site-links"><a class="site-link" href="https://edu-project.jp/" target="_blank" rel="noopener"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></span>公式サイト<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">（新しいタブで開きます）</span></a></div></article>
+      <article class="actor acc rv" style="--d:.1s"><div class="photo"><img src="img/students-kids.jpg" alt="大学生と美山の子どもたち"></div><span class="r">若い担い手・学びの伴走者</span><h3>一般社団法人 わっしょい</h3><p>京都大学を含む7大学の学生による地域づくり団体。2023年にサークルとして発足し、2026年1月に法人化。</p><div class="site-links"><a class="site-link" href="https://wasshoi-ku.com/" target="_blank" rel="noopener"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></span>公式サイト<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">（新しいタブで開きます）</span></a></div></article>
+      <article class="actor rv" style="--d:.2s;background:var(--lav)"><div class="photo"><img src="img/harvest.jpg" alt="地域のお年寄りと子どもたちの稲刈り"></div><span class="r" style="color:var(--teal-d)">制度・場・住まい</span><h3>学校・行政・町民</h3><p>特認校・区域外就学など制度の扉を開く学校と教育委員会。空き家を貸し、子どもを見守る集落の人々。</p></article>
+    </div>
+  </section>
+
+  <section style="background:var(--or-l)"><div class="wrap sec stack" style="gap:32px">
+    <div class="grid g2" style="gap:48px;align-items:center">
+      <div class="stack rv"><div class="lbl" style="color:var(--or-t)">Wasshoi</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">町の16〜29歳は約300人。<br>美山に通う大学生は約140人。</h2><p class="lead">失われた若者世代を、関係人口としての大学生が補い始めています。移住を考える家族にとって「大学生が学びに伴走する町」であることは、都市にはない強い理由になります。</p></div>
+      <figure class="fig chart rv" data-chart style="--d:.1s">
+        <figcaption>若者の「人数」で見る美山</figcaption>
+        <div class="bars" style="height:220px">
+          <div class="b"><span class="num">約300</span><div class="col" style="height:100%"></div></div>
+          <div class="b"><span class="num">約140</span><div class="col hot" style="height:47%;--d:.3s"></div></div>
+        </div>
+        <div class="bars-x"><span>町内の16〜29歳</span><span>わっしょい会員</span></div>
+        <p class="src">わっしょい会員数は2026年8月時点。町内の若者数は推計値。</p>
+      </figure>
+    </div>
+    <div class="nums rv">
+      <div><div class="v"><span data-count="7">7</span>大学</div><div class="k">11学部から参加</div></div>
+      <div><div class="v"><span data-count="46">46</span>回</div><div class="k">2025年度 町内での活動</div></div>
+      <div><div class="v"><span data-count="34">34</span>回</div><div class="k">2025年度 すくすく（平均約20名）</div></div>
+      <div><div class="v"><span data-count="727">727</span>名</div><div class="k">2026年度 延べ参加（7/5時点）</div></div>
+      <div><div class="v"><span data-count="110">110</span>名</div><div class="k">MIYAMA EXPO 第3回</div></div>
+    </div>
+    <div class="act-list">
+      <div class="rv"><b>美山塾</b><span>美山の小中学生に大学生が学習支援。教育移住を考える家族への強い安心材料に。</span></div>
+      <div class="rv" style="--d:.06s"><b>美山「すくすく」</b><span>月2回程度の通年体験教育。ものづくり、自然観察、交流。</span></div>
+      <div class="rv" style="--d:.12s"><b>MIYAMA EXPO</b><span>留学生と美山の子どもたちがつくる国際交流イベント。</span></div>
+      <div class="rv" style="--d:.18s"><b>カヤゴヤ</b><span>学生の手で建てる茅葺きのトレーラーハウス。動く体験教室・交流拠点。</span></div>
+      <div class="rv" style="--d:.24s"><b>農業・農業DX</b><span>米や枝豆を種から育て、田んぼにセンサーとカメラを設置。</span></div>
+      <div class="rv" style="--d:.3s"><b>地域行事への参加</b><span>美山やまざと市、美山ロードなどの運営を手伝う。</span></div>
+    </div>
+    <p class="src">出典：一般社団法人わっしょい公式サイト<a class="fn" href="#sources" data-ref="r18">[18]</a></p>
+  </div></section>
+
+  <section class="sec wrap stack" style="gap:32px">
+    <div class="stack rv"><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">協働の見取り図</h2></div>
+    <div class="eco rv">
+      <div class="node n1"><b>NPO 森の教育プロジェクト</b>構想・教育コンテンツ・国際交流</div>
+      <div class="node n2"><b>わっしょい</b>学習支援・体験教育・若い担い手</div>
+      <div class="core">美山の<br>子どもたち</div>
+      <div class="node n3"><b>美山小・中学校</b>特認校・区域外就学・カリキュラム</div>
+      <div class="node n4"><b>町民・集落</b>空き家・見守り・伝統の継承</div>
+      <div class="node n5"><b>南丹市・京都府</b>制度・住まい・通信インフラ</div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= 07 PROPOSAL ================= -->
+<section class="page" data-page="proposal" data-title="提言">
+  <div class="ch-hero or"><div class="wrap">
+    <span class="no">07</span>
+    <div class="lbl rv">Chapter 07 — Proposal</div>
+    <h1 class="rv" style="--d:.1s">美山から、中山間地への<br>5つの提言</h1>
+    <span class="q rv" style="--d:.2s">問い：他の地域でも使えるか？</span>
+  </div></div>
+
+  <section style="background:var(--teal-d);color:#fff"><div class="wrap sec stack" style="gap:24px;padding-top:0">
+    <ol class="props rv" id="props">
+      <li class="open"><button type="button" aria-expanded="true"><span class="n">01</span><span class="tt">学校を「選ばれる学校」として開く</span><span class="pm" aria-hidden="true"></span></button><div class="body"><div><p>小規模特認校や区域外就学（デュアルスクール型）を活用し、町外の子どもが通える制度の入口をつくる。まずは短期の「お試し就学」から始め、9年間の定着へつなげる。</p></div></div></li>
+      <li><button type="button" aria-expanded="false"><span class="n">02</span><span class="tt">「9年間の住まい」を制度化する</span><span class="pm" aria-hidden="true"></span></button><div class="body"><div><p>小中9年の定期借家空き家バンクと改修支援。貸し手の不安を減らす管理・仲介の仕組みとセットで、毎年5〜6戸を安定して供給する。</p></div></div></li>
+      <li><button type="button" aria-expanded="false"><span class="n">03</span><span class="tt">大学との連携を常設のインフラに</span><span class="pm" aria-hidden="true"></span></button><div class="body"><div><p>わっしょいの美山塾・すくすくを「放課後の学び保証」として位置づけ、拠点・交通・保険を地域が支える。学生の関わりを単発の活動から継続の仕組みへ。</p></div></div></li>
+      <li><button type="button" aria-expanded="false"><span class="n">04</span><span class="tt">仕事を持ってこられる町に</span><span class="pm" aria-hidden="true"></span></button><div class="body"><div><p>通信環境とコワーキング拠点を整え、都市の企業と二地域勤務の協定をつくる。共働きの保護者が仕事を辞めずに移れることが、教育移住の前提になる。</p></div></div></li>
+      <li><button type="button" aria-expanded="false"><span class="n">05</span><span class="tt">指標を「出生率」から「流れ」へ</span><span class="pm" aria-hidden="true"></span></button><div class="body"><div><p>16〜29歳・30代女性・年少人口の社会増減と、教育移住の世帯数を毎年公開する。他の地域が自分の町の数字を入れて使えるKPIテンプレートとして配布する。</p></div></div></li>
+    </ol>
+  </div></section>
+
+  <section class="sec wrap stack" style="gap:28px">
+    <div class="stack rv"><div class="lbl">KPI Template</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">学校存続KPIテンプレート（美山版）</h2><p class="lead">「率」ではなく「人数」と「流れ」で、毎年の進み具合を確かめます。他の地域は右の列を自分の町の数字に置き換えて使えます。</p></div>
+    <div class="tscroll rv"><table class="t">
+      <thead><tr><th>指標</th><th>美山の現状</th><th>目標の考え方</th><th>出典・更新</th></tr></thead>
+      <tbody>
+        <tr><td><b>教育移住の世帯数</b></td><td class="n">—</td><td>年5〜6世帯</td><td>NPO・市の受入記録（毎年）</td></tr>
+        <tr><td><b>小学校の児童数</b></td><td class="n">約98人</td><td>90人規模を維持</td><td>学校基本調査（毎年5月）</td></tr>
+        <tr><td><b>0〜5歳の人数</b></td><td class="n">0歳6人・1歳6人</td><td>各学年10人以上</td><td>住民基本台帳</td></tr>
+        <tr><td><b>16〜29歳の人数</b></td><td class="n">約300人</td><td>減少の幅を縮める</td><td>住民基本台帳</td></tr>
+        <tr><td><b>人口に対する定住増</b></td><td class="n">—</td><td>人口の0.6〜1%/年</td><td>転入・転出の記録</td></tr>
+        <tr><td><b>9年定期借家の供給戸数</b></td><td class="n">—</td><td>年5〜6戸</td><td>空き家バンク</td></tr>
+        <tr><td><b>大学生の延べ関わり</b></td><td class="n">727名（2026年7月時点）</td><td>継続・拡大</td><td>わっしょい活動記録</td></tr>
+      </tbody>
+    </table></div>
+    <p class="src rv">「—」は現時点で公表データがないため、記録の仕組みづくりから始める項目です。</p>
+  </section>
+</section>
+
+<!-- ================= 08 JOIN ================= -->
+<section class="page" data-page="join" data-title="参加する">
+  <div class="ch-hero img"><img src="img/postcards.jpg" alt=""><div class="wrap">
+    <span class="no">08</span>
+    <div class="lbl rv">Chapter 08 — Join</div>
+    <h1 class="rv" style="--d:.1s">「また来てね。」<br>子どもたちの言葉に、町として応える。</h1>
+    <span class="q rv" style="--d:.2s">問い：私にできることは？</span>
+  </div></div>
+
+  <section class="sec wrap stack" style="gap:32px">
+    <div class="note rv" role="note">
+      <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="#5D559A" stroke-width="1.8"/><path d="M12 7v6M12 16.5v.5" stroke="#5D559A" stroke-width="2" stroke-linecap="round"/></svg>
+      <div><b>ここに挙げたアクションは、現時点では「構想」です。</b>
+      <p>空き家の9年貸出、サポーター登録、体験・移住相談などの仕組みは、まだ実際には動いていません。この提言を町の皆さんと具体的にしていくことで、課題の解決につながる可能性がある、という想定として示しています。関心をお持ちの方は、まずはお気軽にお問い合わせください。</p></div>
+    </div>
+    <div class="grid g2">
+      <div class="jc rv"><span class="who">美山の方へ</span><h3>空き家を9年間貸す相談</h3><p>使っていない家を、小中学生のいる家族に9年間。改修や管理の不安も含めてご相談ください。</p><a href="mailto:mori-info@edu-project.jp?subject=空き家の相談">相談する（構想段階） →</a><span class="mail">mori-info@edu-project.jp</span></div>
+      <div class="jc rv" style="--d:.08s"><span class="who">美山の方へ</span><h3>受入家庭・地域サポーター</h3><p>移住した家族の相談役、子どもの見守り、行事への声かけ。できる範囲で関わってください。</p><a href="mailto:mori-info@edu-project.jp?subject=サポーター登録">関心を伝える（構想段階） →</a><span class="mail">mori-info@edu-project.jp</span></div>
+      <div class="jc rv" style="--d:.16s"><span class="who">ご家族へ</span><h3>親子で美山の学びを体験</h3><p>田植え、自転車、国際交流。まずは短期間の体験から、美山での子育てを確かめてみませんか。</p><a href="mailto:mori-info@edu-project.jp?subject=体験・移住相談">体験・移住について問い合わせる →</a><span class="mail">mori-info@edu-project.jp</span></div>
+      <div class="jc rv" style="--d:.24s"><span class="who">学生・企業・行政の方へ</span><h3>わっしょい・対話会に参加</h3><p>美山塾やすくすくへの参加、企業連携、他地域での応用。議論の場を一緒につくりましょう。</p><a href="https://wasshoi-ku.com/">わっしょいのサイトへ →</a><span class="mail">対話会のお問い合わせ：mori-info@edu-project.jp</span></div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= SOURCES ================= -->
+<section class="page" data-page="sources" data-title="データと出典">
+  <div class="ch-hero" style="background:var(--ink)"><div class="wrap">
+    <div class="lbl rv">Data &amp; Evidence</div>
+    <h1 class="rv" style="--d:.1s">データと出典</h1>
+    <p class="rv" style="--d:.2s">このサイトの主張が、どの根拠に基づき、どう計算されているかをすべて公開します。数字には本文中の［番号］から、ここへ移動できます。</p>
+  </div></div>
+
+  <section class="sec wrap stack" style="gap:28px">
+    <div class="stack rv"><div class="lbl">Map of Evidence</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">主張と根拠の対応</h2>
+    <p class="lead"><span class="pill o">公式統計</span>行政が公表した数値　<span class="pill p">研究・書籍</span>専門家の分析　<span class="pill c">本サイト算出</span>公開データからの計算</p></div>
+    <div class="tscroll rv"><table class="t">
+      <thead><tr><th>このサイトの主張</th><th>根拠</th><th>種類</th></tr></thead>
+      <tbody>
+        <tr><td>少子化の主因は夫婦の子ども数ではなく、婚姻数の減少</td><td>出生数58%減に対し、婚姻あたり出生数は84%水準を維持 <a class="fn" href="#sources" data-ref="r1">[1]</a><a class="fn" href="#sources" data-ref="r2">[2]</a></td><td><span class="pill p">研究・書籍</span></td></tr>
+        <tr><td>地方の出生率は高めに見えやすく、目標にすべきは子どもの人数</td><td>未婚の若年女性の流出で分母が減る統計的な性質 <a class="fn" href="#sources" data-ref="r1">[1]</a><a class="fn" href="#sources" data-ref="r3">[3]</a></td><td><span class="pill p">研究・書籍</span></td></tr>
+        <tr><td>若者の流出が「親になる世代」を消し、縮小再生産を招く</td><td>20代の流出と地域の人口再生産の関係 <a class="fn" href="#sources" data-ref="r1">[1]</a><a class="fn" href="#sources" data-ref="r4">[4]</a></td><td><span class="pill p">研究・書籍</span></td></tr>
+        <tr><td>美山の16〜29歳は20年で約53%減、総人口の約1.4倍の速さ</td><td>640人→300人、5,169人→約3,250人 <a class="fn" href="#sources" data-ref="r5">[5]</a></td><td><span class="pill o">公式統計</span><span class="pill c">本サイト算出</span></td></tr>
+        <tr><td>美山小は2025年106人、2026年に100人割れ</td><td>南丹市公式統計（2025年5月1日）<a class="fn" href="#sources" data-ref="r6">[6]</a>、2026年は速報値 <a class="fn" href="#sources" data-ref="r5">[5]</a></td><td><span class="pill o">公式統計</span></td></tr>
+        <tr><td>移住がなければ2036年に小学生約41人・中学生約34人</td><td>コーホート進級法による推計 <a class="fn" href="#sources" data-ref="r6">[6]</a><a class="fn" href="#sources" data-ref="r8">[8]</a></td><td><span class="pill c">本サイト算出</span></td></tr>
+        <tr><td>小中一貫校への再編は避けにくいが、他地域への吸収は現実的でない</td><td>校区340㎢・スクールバス4路線 <a class="fn" href="#sources" data-ref="r9">[9]</a>、複式学級の法定基準 <a class="fn" href="#sources" data-ref="r10">[10]</a></td><td><span class="pill o">公式統計</span></td></tr>
+        <tr><td>年5〜6世帯の教育移住で小学生約90人を維持できる</td><td>推計への移住の加算 <a class="fn" href="#sources" data-ref="r8">[8]</a>、教育疎開の構想 <a class="fn" href="#sources" data-ref="r19">[19]</a></td><td><span class="pill c">本サイト算出</span></td></tr>
+        <tr><td>その規模（人口の約0.6%/年）は現実的な範囲</td><td>田園回帰1%戦略 <a class="fn" href="#sources" data-ref="r11">[11]</a><a class="fn" href="#sources" data-ref="r12">[12]</a></td><td><span class="pill p">研究・書籍</span></td></tr>
+        <tr><td>学校を軸に人の流れを変えた地域がある</td><td>隠岐島前高校 <a class="fn" href="#sources" data-ref="r13">[13]</a>、丹波山村 <a class="fn" href="#sources" data-ref="r14">[14]</a>、デュアルスクール <a class="fn" href="#sources" data-ref="r15">[15]</a><a class="fn" href="#sources" data-ref="r16">[16]</a>、地域みらい留学 <a class="fn" href="#sources" data-ref="r17">[17]</a></td><td><span class="pill o">公式統計</span><span class="pill p">報道・団体発表</span></td></tr>
+        <tr><td>大学生が若い担い手として関わっている</td><td>わっしょいの活動実績 <a class="fn" href="#sources" data-ref="r18">[18]</a></td><td><span class="pill p">団体発表</span></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section style="background:var(--mint)"><div class="wrap sec stack" style="gap:28px">
+    <div class="stack rv"><div class="lbl">Theory</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">理論的な根拠</h2></div>
+    <div class="grid g2">
+      <div class="box ev stack rv"><h3>① 地方の出生率が高めに見える「統計のトリック」</h3>
+        <div class="formula">合計特殊出生率 ＝ Σ（母の年齢別出生数 ÷ 同じ年齢の女性人口）<small>15〜49歳の各年齢について足し合わせる。分母には未婚の女性も含まれる。</small></div>
+        <p>日本では婚外子が約2%と少ないため、出生のほぼすべてが結婚した夫婦から生まれます<a class="fn" href="#sources" data-ref="r2">[2]</a>。未婚の若い女性が進学や就職で都市へ移ると、地方では分母が小さくなり、出生率は高めに出ます。しかし生まれる子どもの数は、女性の人数そのものが減った分だけ減ります。天野（2024）第3章はこの点を「統計的誤解がもたらす地方少子化加速の罠」として論じ、地域の目標は出生率ではなく子どもの人数に置くべきだとしています<a class="fn" href="#sources" data-ref="r1">[1]</a><a class="fn" href="#sources" data-ref="r3">[3]</a>。</p>
+      </div>
+      <div class="box ev stack rv" style="--d:.1s"><h3>② 若年層の流出による「縮小再生産」</h3>
+        <div class="formula">地域の出生数 ≒ 親になる世代の人数 × 1人あたりの出生<small>後者がほぼ一定でも、前者が減れば出生数は減る。</small></div>
+        <p>半世紀で婚姻あたりの出生数は1.9→1.6とほぼ保たれている一方、婚姻数は半分になりました<a class="fn" href="#sources" data-ref="r2">[2]</a>。地域で見ると、親になる前の20代が流出すると、その地域で人口を再生産する力そのものが失われます<a class="fn" href="#sources" data-ref="r4">[4]</a>。天野（2024）第4章「地方から流出する結婚適齢期前人口」が示す構造で、美山では16〜29歳が20年で約640人から約300人へと半減しています<a class="fn" href="#sources" data-ref="r1">[1]</a><a class="fn" href="#sources" data-ref="r5">[5]</a>。</p>
+      </div>
+    </div>
+    <div class="box ev stack rv"><h3>③ なぜ「子育て支援だけ」では足りないのか</h3>
+      <p>子育て世帯への支援は、すでに地域にいる夫婦の暮らしを支えます。しかし若者が地域に残る・戻る・移ってくる理由にはなりにくく、①②の構造を変えません<a class="fn" href="#sources" data-ref="r1">[1]</a>。そこでこのサイトは、教育そのものを「外から子育て世帯を呼ぶ理由」に変える教育疎開に注目し<a class="fn" href="#sources" data-ref="r19">[19]</a>、その規模が全国の知見（田園回帰1%戦略）から見て現実的な範囲かを確かめています<a class="fn" href="#sources" data-ref="r11">[11]</a><a class="fn" href="#sources" data-ref="r12">[12]</a>。</p>
+    </div>
+  </div></section>
+
+  <section class="sec wrap stack" style="gap:28px">
+    <div class="stack rv"><div class="lbl">Method</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">推計の方法</h2>
+    <p class="lead">児童生徒数は、市町村の学校再編計画でも一般に使われる「コーホート進級法」で計算しました。1年ごとに全員が1学年ずつ進級し、新しく小学1年生が入ってくる、という単純な仕組みです。</p></div>
+    <div class="grid g2">
+      <div class="formula rv">① 翌年度の n 年生 ＝ 今年度の（n−1）年生<small>転入・転出、山村留学などの出入りはないものとする。</small></div>
+      <div class="formula rv" style="--d:.06s">② 小学生 ＝ 小1〜小6の合計　中学生 ＝ 中1〜中3の合計<small>基準：2025年5月1日の学年別人数<a class="fn" href="#sources" data-ref="r6">[6]</a></small></div>
+      <div class="formula rv" style="--d:.12s">③ 小1の入学者：2026年度＝5歳児、2027年度＝4歳児、2028年度＝3歳児（各16〜20人、中央値18人）、2029年度＝2歳児10人、2030年度＝1歳児6人、2031年度＝0歳児6人、2032年度以降＝年7人<small>未就学児数は南丹市総合教育会議資料（一次資料経由）<a class="fn" href="#sources" data-ref="r8">[8]</a>。年7人は一次資料の標準推計の仮定。</small></div>
+      <div class="formula rv" style="--d:.18s">④ 教育疎開シナリオ：2027年度から毎年、移住の子ども8人（5〜6世帯×約1.4人）を小1に加える<small>長期的には1学年15人（7＋8）→ 小学生約90人・中学生約45人</small></div>
+      <div class="formula rv">⑤ 人口比：5.5世帯 × 3.5人 ÷ 3,250人 ≒ 0.59%　1%ライン：3,250人 × 1% ≒ 32人<small>1世帯3.5人は概算。</small></div>
+      <div class="formula rv" style="--d:.06s">⑥ 減少スピードの比：(1−300/640) ÷ (1−3,250/5,169) ＝ 53.1% ÷ 37.1% ≒ 1.43<small>16〜29歳と総人口の2006→2026年の減少率の比<a class="fn" href="#sources" data-ref="r5">[5]</a></small></div>
+    </div>
+    <div class="tscroll rv"><table class="t">
+      <thead><tr><th>年度</th><th>小学生（中央値）</th><th>幅（3〜5歳 16〜20人）</th><th>中学生（中央値）</th><th>幅</th><th>教育疎開シナリオの小学生</th></tr></thead>
+      <tbody>
+<tr><td class="n">2026</td><td class="n">104</td><td>102〜106</td><td class="n">72</td><td>72</td><td class="n">104</td></tr>
+<tr><td class="n">2027</td><td class="n">104</td><td>100〜108</td><td class="n">61</td><td>61</td><td class="n">112</td></tr>
+<tr><td class="n">2028</td><td class="n">100</td><td>94〜106</td><td class="n">60</td><td>60</td><td class="n">116</td></tr>
+<tr><td class="n">2029</td><td class="n">99</td><td>93〜105</td><td class="n">51</td><td>51</td><td class="n">123</td></tr>
+<tr><td class="n">2030</td><td class="n">89</td><td>83〜95</td><td class="n">49</td><td>49</td><td class="n">121</td></tr>
+<tr><td class="n">2031</td><td class="n">76</td><td>70〜82</td><td class="n">46</td><td>46</td><td class="n">116</td></tr>
+<tr><td class="n">2032</td><td class="n">65</td><td>61〜69</td><td class="n">53</td><td>51〜55</td><td class="n">113</td></tr>
+<tr><td class="n">2033</td><td class="n">54</td><td>52〜56</td><td class="n">55</td><td>51〜59</td><td class="n">102</td></tr>
+<tr><td class="n">2034</td><td class="n">43</td><td>43</td><td class="n">54</td><td>48〜60</td><td class="n">91</td></tr>
+<tr><td class="n">2035</td><td class="n">40</td><td>40</td><td class="n">46</td><td>42〜50</td><td class="n">88</td></tr>
+<tr><td class="n">2036</td><td class="n hi">41</td><td>41</td><td class="n hi">34</td><td>32〜36</td><td class="n">89</td></tr>
+      </tbody>
+    </table></div>
+    <div class="grid g2">
+      <div class="box ev stack rv"><h3>推計の限界と読み方</h3><p>転出入を入れていないため、実際の動きとはずれます。たとえば2026年の推計は104人ですが、速報値は98人で、すでに推計より少なくなっています<a class="fn" href="#sources" data-ref="r5">[5]</a>。実際の減少は推計より早い可能性があります。また2031年度以降の0歳児・出生数の仮定（6人・年7人）が変われば、2032年度以降の値も変わります。</p></div>
+      <div class="box ev stack rv" style="--d:.1s;border-top:4px solid var(--or)"><h3>一次資料からの修正点</h3><p>2036年の小学生は一次資料（約40人）と本推計（約41人）がほぼ一致しました。一方、中学生は一次資料の約23人に対し、本推計は約34人です。一次資料は「年7人×3学年」をすでに生まれている学年にも当てはめていたため、すでに生まれている2〜4歳の実数（10人・各16〜20人）に置き換えて修正しました。中学生は2036年以降も減り続け、年7人が続けば約21人になります。</p></div>
+    </div>
+  </section>
+
+  <section style="background:var(--lav-l)"><div class="wrap sec stack" style="gap:24px">
+    <div class="stack rv"><div class="lbl" style="color:var(--vio)">Legal Standard</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">複式学級の法定基準</h2><p class="lead">「公立義務教育諸学校の学級編制及び教職員定数の標準に関する法律」第3条による1学級の人数の標準です<a class="fn" href="#sources" data-ref="r10">[10]</a>。シミュレーターの判定はこの小学校の基準を使っています。</p></div>
+    <div class="tscroll rv"><table class="t">
+      <thead><tr><th>区分</th><th>小学校</th><th>中学校</th></tr></thead>
+      <tbody>
+        <tr><td>同じ学年で編制する学級</td><td>40人（1年生は35人）</td><td>40人</td></tr>
+        <tr><td>2つの学年で編制する学級（複式学級）</td><td>16人（1年生を含む場合は8人）</td><td>8人</td></tr>
+      </tbody>
+    </table></div>
+    <p class="src rv">2学年の合計がこの人数以下になると、2学年で1つの学級を編制する基準に当たります。実際の学級編制は都道府県の基準によって異なる場合があります。</p>
+  </div></section>
+
+  <section class="sec wrap stack" style="gap:24px">
+    <div class="stack rv"><div class="lbl">References</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">参考文献・資料</h2></div>
+    <ol class="refs rv">
+<li id="r1"><span class="no">[1]</span><div>天野馨南子（2024）『まちがいだらけの少子化対策：激減する婚姻数になぜ向き合わないのか』金融財政事情研究会、240頁、ISBN 978-4-322-14446-8<span class="what">第1章「少子化が進む本当の理由」、第3章「統計的誤解がもたらす地方少子化加速の罠」、第4章「地方から流出する結婚適齢期前人口」、第6章「『子育て支援』最優先国家が苦しめるのは誰なのか」を理論的根拠として参照</span><a href="https://www.kinokuniya.co.jp/f/dsg-01-9784322144468" target="_blank" rel="noopener">https://www.kinokuniya.co.jp/f/dsg-01-9784322144468</a></div></li>
+<li id="r2"><span class="no">[2]</span><div>天野馨南子（2023）「日本の少子化に関するデータ解説」内閣府経済社会総合研究所 ESRI政策フォーラム資料（2023年4月26日）<span class="what">出生数（1970→2021年）58%減、婚姻あたり出生数1.9→1.6、婚姻数51%減の出典</span><a href="https://www.esri.cao.go.jp/jp/esri/workshop/forum/230426/pdf/230426_siryo03.pdf" target="_blank" rel="noopener">https://www.esri.cao.go.jp/jp/esri/workshop/forum/230426/pdf/230426_siryo03.pdf</a></div></li>
+<li id="r3"><span class="no">[3]</span><div>天野馨南子「データで見る『エリア出生率比較』政策の落とし穴：エリアKGI/KPIは『出生率』ではなく『子ども人口実数』」ニッセイ基礎研究所 基礎研レポート<span class="what">地域の目標を出生率ではなく子どもの人数に置くべきとする根拠（提言05の根拠）</span><a href="https://www.nli-research.co.jp/files/topics/61736_ext_18_0.pdf?site=nli" target="_blank" rel="noopener">https://www.nli-research.co.jp/files/topics/61736_ext_18_0.pdf?site=nli</a></div></li>
+<li id="r4"><span class="no">[4]</span><div>天野馨南子（2024）「2023年20代人口流出率にみる『都道府県人口減の未来図』」ニッセイ基礎研究所 NLI Research Institute REPORT 2024年6月号<span class="what">20代人口の流出が地域の人口再生産の機能を失わせるという指摘（縮小再生産の根拠）</span><a href="https://www.nli-research.co.jp/files/topics/78721_ext_18_0.pdf?site=nli" target="_blank" rel="noopener">https://www.nli-research.co.jp/files/topics/78721_ext_18_0.pdf?site=nli</a></div></li>
+<li id="r5"><span class="no">[5]</span><div>Webサイト企画 一次資料「美山町の『静かな危機』と教育を起点とした再生シナリオ」（2026）<span class="what">総人口・16〜29歳の推移（南丹市『地域別まちづくり構想（美山地域編）』（2021）および住民基本台帳をもとに作成）、1995〜2016年の児童生徒数、2026年の児童数（速報値）の出典。元データでの検証は下記「今後確認するデータ」を参照</span></div></li>
+<li id="r6"><span class="no">[6]</span><div>南丹市「園児・児童・生徒の状況（令和7年5月1日現在）」<span class="what">美山小学校 106人（学年別19・16・11・22・18・20）、美山中学校 75人（23・29・23）。推計の基準データ</span><a href="https://www.city.nantan.kyoto.jp/www/life/112/018/000/70987/1012148_1_501_42.pdf" target="_blank" rel="noopener">https://www.city.nantan.kyoto.jp/www/life/112/018/000/70987/1012148_1_501_42.pdf</a></div></li>
+<li id="r7"><span class="no">[7]</span><div>南丹市立美山小学校「学校の概要」<span class="what">知井・平屋・宮島・鶴ヶ岡・大野の5小学校を統合し、2016年（平成28年）4月1日に美山小学校が開校</span><a href="https://www.kyoto-be.ne.jp/miyama-es/cms/?p=25" target="_blank" rel="noopener">https://www.kyoto-be.ne.jp/miyama-es/cms/?p=25</a></div></li>
+<li id="r8"><span class="no">[8]</span><div>本サイトによる推計（コーホート進級法）＋ 南丹市「令和7年度第1回 総合教育会議」幼児教育・保育推進課資料（一次資料経由）<span class="what">2026〜2036年の児童生徒数推計。計算方法と全年度の値は本ページ「推計の方法」に掲載</span></div></li>
+<li id="r9"><span class="no">[9]</span><div>文部科学省「統合による魅力ある学校づくりの取組モデル〈京都府南丹市〉」<span class="what">美山小学校の校区面積340.47㎢（南丹市の面積の半分強）、スクールバス4路線</span><a href="https://www.mext.go.jp/content/20200228-mxt_syoto02-000004938_10.pdf" target="_blank" rel="noopener">https://www.mext.go.jp/content/20200228-mxt_syoto02-000004938_10.pdf</a></div></li>
+<li id="r10"><span class="no">[10]</span><div>公立義務教育諸学校の学級編制及び教職員定数の標準に関する法律（義務標準法）第3条<span class="what">複式学級の基準：小学校は2学年で16人（1年生を含む場合8人）、中学校は2学年で8人</span><a href="https://hourei.net/law/333AC0000000116" target="_blank" rel="noopener">https://hourei.net/law/333AC0000000116</a></div></li>
+<li id="r11"><span class="no">[11]</span><div>藤山浩（2015）『田園回帰1%戦略：地元に人と仕事を取り戻す』農山漁村文化協会 ／ 同「『1%戦略』で地域ごとに人口安定化の目標設定」総務省資料<span class="what">毎年、人口の1%程度の定住増加で人口と子どもの数を安定させられるという分析</span><a href="https://www.soumu.go.jp/main_content/000666550.pdf" target="_blank" rel="noopener">https://www.soumu.go.jp/main_content/000666550.pdf</a></div></li>
+<li id="r12"><span class="no">[12]</span><div>竹内亮（2016）「シリーズ田園回帰（1）藤山浩著『田園回帰1%戦略』」『財政と公共政策』第60号、京都大学<span class="what">1%戦略の要旨（地域人口と14歳以下人口を8割以上で安定させる定住増の目安、想定する移住者像）</span><a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/217547/1/pfpp_060_41.pdf" target="_blank" rel="noopener">https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/217547/1/pfpp_060_41.pdf</a></div></li>
+<li id="r13"><span class="no">[13]</span><div>岩本悠「地域・社会とつながる魅力ある高校づくり」熊本県資料<span class="what">隠岐島前高校の生徒数 89人→184人（2008→2017年）</span><a href="https://www.pref.kumamoto.jp/uploaded/life/232813_661203_misc.pdf" target="_blank" rel="noopener">https://www.pref.kumamoto.jp/uploaded/life/232813_661203_misc.pdf</a></div></li>
+<li id="r14"><span class="no">[14]</span><div>リセマム「丹波山村 山村留学説明会」（2026年11月）<span class="what">2026年11月1日現在、小学生19人・中学生7人のうち半数以上が山村留学で移住</span><a href="https://resemom.jp/release/prtimes/20261105/226335.html" target="_blank" rel="noopener">https://resemom.jp/release/prtimes/20261105/226335.html</a></div></li>
+<li id="r15"><span class="no">[15]</span><div>徳島県教育委員会・株式会社あわえ「デュアルスクール」資料（国土交通省 全国二地域居住等促進協議会）<span class="what">区域外就学制度を使い、住民票を移さずに都市と地方の学校を行き来できる仕組み</span><a href="https://www.mlit.go.jp/2chiiki/files/dual_schol.pdf" target="_blank" rel="noopener">https://www.mlit.go.jp/2chiiki/files/dual_schol.pdf</a></div></li>
+<li id="r16"><span class="no">[16]</span><div>リセマム「国土交通省『特定居住支援法人モデル構築実証調査』に採択」（2026年10月）<span class="what">美波町・高畠町・森町・株式会社あわえによる多地域就学制度の実証</span><a href="https://resemom.jp/release/prtimes/20261016/220917.html" target="_blank" rel="noopener">https://resemom.jp/release/prtimes/20261016/220917.html</a></div></li>
+<li id="r17"><span class="no">[17]</span><div>一般財団法人地域・教育魅力化プラットフォーム「地域みらい留学 1学年の入学者数が初の1000人超」（2026年）<span class="what">2026年度の都道府県外からの入学者1,127人、参画校約190校</span><a href="https://prtimes.jp/main/html/rd/p/000000068.000035136.html" target="_blank" rel="noopener">https://prtimes.jp/main/html/rd/p/000000068.000035136.html</a></div></li>
+<li id="r18"><span class="no">[18]</span><div>一般社団法人わっしょい 公式サイト<span class="what">会員約140名（7大学・11学部、2026年8月時点）、2025年度の町内活動46回、すくすく34回、2026年度延べ参加727名（7月5日時点）、MIYAMA EXPO第3回110名</span><a href="https://wasshoi-ku.com/" target="_blank" rel="noopener">https://wasshoi-ku.com/</a></div></li>
+<li id="r19"><span class="no">[19]</span><div>特定非営利活動法人 森の教育プロジェクト（2025）『2025森の教育プロジェクトパンフレット』／公式サイト<span class="what">「教育疎開（子ども時代は、田舎で学ぶ）」の構想</span><a href="https://edu-project.jp/" target="_blank" rel="noopener">https://edu-project.jp/</a></div></li>
+    </ol>
+  </section>
+
+  <section style="background:var(--or-l)"><div class="wrap sec stack" style="gap:20px">
+    <div class="stack rv"><div class="lbl" style="color:var(--or-t)">To Verify</div><h2 class="h2" style="font-size:clamp(24px,3vw,34px)">今後、元データで確認する項目</h2><p class="lead">説得力をさらに高めるため、次のデータは行政の元資料で確かめ、確認でき次第この表示を更新します。</p></div>
+    <ul class="rv" style="margin:0;padding-left:1.4em;font-size:14px;line-height:2.1">
+      <li>美山地域の総人口と16〜29歳人口（2006〜2026年）：南丹市の住民基本台帳 地域別・年齢別人口</li>
+      <li>未就学児の年齢別人数：令和7年度第1回 南丹市総合教育会議の配布資料</li>
+      <li>2026年5月1日現在の学年別児童生徒数：南丹市「園児・児童・生徒の状況」令和8年版</li>
+      <li>1995年・2006年の児童生徒数：学校基本調査（学校別）または南丹市教育委員会の記録</li>
+    </ul>
+  </div></section>
+
+  <section class="sec wrap stack" style="gap:12px">
+    <h2 class="h2 rv" style="font-size:24px">更新履歴</h2>
+    <ul class="rv" style="margin:0;padding-left:1.4em;font-size:14px;line-height:2.1">
+      <li>2026年11月17日　出典・計算方法を公開。中学生の推計をコーホート進級法で再計算（2036年 約23人 → 約34人）。南丹市公式統計（2025年5月1日）を追加。</li>
+      <li>2026年11月　公開準備版</li>
+    </ul>
+  </section>
+</section>
+
+</main>
+
+<aside class="evbar" id="evbar">
+  <div class="wrap">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/><path d="M8 7h7M8 11h5"/></svg>
+    <p>このサイトは、書籍・研究レポート・南丹市の公式統計など<b>19件の文献とデータ</b>をもとにまとめています。数字の根拠と推計の計算方法は、すべて公開しています。</p>
+    <a class="tl" href="#sources">データと出典を見る <span class="ar">→</span></a>
+  </div>
+</aside>
+<nav class="pager" id="pager" aria-label="前後の章"></nav>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="stack" style="gap:8px;max-width:420px">
+      <b class="mn" style="color:#fff;font-size:20px">美山 未来思考</b>
+      <span>「子ども時代は、田舎で学ぶ」が、あたりまえの世の中に。</span>
+      <span style="color:#9AA7A5">運営：NPO法人 森の教育プロジェクト ／ 協力：一般社団法人 わっしょい</span>
+    </div>
+    <nav aria-label="フッター">
+      <a href="#home">トップ</a><a href="#how">04 処方箋</a>
+      <a href="#why">01 構造</a><a href="#evidence">05 先行事例</a>
+      <a href="#data">02 データ</a><a href="#who">06 担い手</a>
+      <a href="#voices">03 声</a><a href="#proposal">07 提言</a>
+      <a href="#sources">データと出典</a><a href="#join">08 参加する</a>
+    </nav>
+    <div class="cp">© 2026 NPO法人 森の教育プロジェクト　｜　このサイトでは、利用状況の把握のためにGoogleアナリティクスを使用しています。Cookieを使って匿名でデータを収集しており、個人を特定する情報は含みません。詳しくは<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener" style="color:#C9D2D0;text-decoration:underline">Googleのポリシー</a>をご覧ください。</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var ORDER=['home','why','data','voices','how','evidence','who','proposal','join','sources'];
+  var NAMES={home:'トップ',why:'01 構造を知る',data:'02 データで見る美山',voices:'03 地域の声',how:'04 処方箋：教育疎開',evidence:'05 先行事例',who:'06 担い手の生態系',proposal:'07 提言',join:'08 参加する',sources:'データと出典'};
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var pages={};document.querySelectorAll('.page').forEach(function(p){pages[p.dataset.page]=p;});
+  var curtain=document.getElementById('curtain'),cmark=document.getElementById('cmark');
+  var current=null,busy=false;
+
+  /* school chart (shared) */
+  var X=function(y){return 60+(y-1995)*540/41;},Y=function(v){return 290-v*0.8;};
+  var pts=function(arr){return arr.map(function(d){return X(d[0]).toFixed(1)+','+Y(d[1]).toFixed(1);}).join(' ');};
+  var yrs=[2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2036];
+  var eP=[104,104,100,99,89,76,65,54,43,40,41],jP=[72,61,60,51,49,46,53,55,54,46,34],mP=[104,112,116,123,121,116,113,102,91,88,89];
+  var zip=function(base,arr){return [base].concat(yrs.map(function(y,i){return [y,arr[i]];}));};
+  var eA=[[1995,315],[2006,220],[2016,127],[2025,106]],jA=[[1995,210],[2006,135],[2016,121],[2025,75]];
+  var x25=X(2025);
+  var schoolSVG='<svg viewBox="0 0 680 330" role="img" aria-label="小学生は1995年約315人、2025年106人。移住がなければ2036年約41人、中学生約34人。教育移住が年5〜6世帯あれば2036年の小学生は約89人">'+
+   '<rect class="fd" style="--d:.2s" x="'+x25+'" y="20" width="'+(668-x25)+'" height="270" fill="#F3F1FA"/>'+
+   '<text class="fd" style="--d:.2s" x="'+(x25+8)+'" y="38" font-size="12" fill="#5D559A">推計（コーホート進級法）</text>'+
+   '<g stroke="#E3E8E6"><line x1="50" y1="290" x2="668" y2="290"/><line x1="50" y1="210" x2="668" y2="210"/><line x1="50" y1="130" x2="668" y2="130"/><line x1="50" y1="50" x2="668" y2="50"/></g>'+
+   '<g font-size="12" fill="#5A6664"><text x="16" y="294">0</text><text x="10" y="214">100</text><text x="10" y="134">200</text><text x="10" y="54">300</text>'+
+   [1995,2006,2016,2025,2036].map(function(y){return '<text x="'+(X(y)-15)+'" y="312">'+y+'</text>';}).join('')+'</g>'+
+   '<polyline class="ln" pathLength="1" points="'+pts(eA)+'" fill="none" stroke="#2E6662" stroke-width="3.5"/>'+
+   '<polyline class="ln" pathLength="1" style="--d:.3s" points="'+pts(jA)+'" fill="none" stroke="#8D86C4" stroke-width="3"/>'+
+   '<polyline class="fd" style="--d:1.7s" points="'+pts(zip([2025,106],eP))+'" fill="none" stroke="#2E6662" stroke-width="3" stroke-dasharray="7 6"/>'+
+   '<polyline class="fd" style="--d:1.9s" points="'+pts(zip([2025,75],jP))+'" fill="none" stroke="#8D86C4" stroke-width="3" stroke-dasharray="7 6"/>'+
+   '<polyline class="ln" pathLength="1" style="--d:2.2s" points="'+pts([[2025,106]].concat(yrs.map(function(y,i){return [y,mP[i]];})))+'" fill="none" stroke="#D9621B" stroke-width="4"/>'+
+   '<circle class="pt" style="--d:1.6s" cx="'+x25+'" cy="'+Y(106)+'" r="6" fill="#2E6662"/>'+
+   '<circle class="pt" style="--d:1.7s" cx="'+X(2026)+'" cy="'+Y(98)+'" r="5" fill="#fff" stroke="#2E6662" stroke-width="2"/>'+
+   '<g font-size="13" font-weight="700"><text class="fd" style="--d:.4s" x="70" y="32" fill="#2E6662">小 315</text><text class="fd" style="--d:.5s" x="62" y="168" fill="#5D559A">中 210</text>'+
+   '<text class="fd" style="--d:1.5s" x="'+(x25-70)+'" y="'+(Y(106)-12)+'" fill="#2E6662">小 106</text>'+
+   '<text class="fd" style="--d:1.6s" x="'+(x25-62)+'" y="'+(Y(75)+20)+'" fill="#5D559A">中 75</text>'+
+   '<text class="fd" style="--d:1.8s" x="'+(X(2026)+8)+'" y="'+(Y(98)+18)+'" font-size="11" font-weight="400" fill="#2E6662">2026年 98（速報）</text>'+
+   '<text class="fd" style="--d:3s" x="606" y="'+(Y(89)+4)+'" fill="#B4500E">89</text><text class="fd" style="--d:2.2s" x="606" y="'+(Y(41)-2)+'" fill="#2E6662">41</text><text class="fd" style="--d:2.3s" x="606" y="'+(Y(34)+14)+'" fill="#5D559A">34</text></g></svg>';
+  document.querySelectorAll('.schoolChart').forEach(function(el){el.innerHTML=schoolSVG;});
+
+  /* counters */
+  function countUp(el){
+    if(el.dataset.done)return;el.dataset.done=1;
+    var to=+el.dataset.count,fmt=to>=1000,t0=null,dur=1400;
+    if(reduce){el.textContent=fmt?to.toLocaleString():to;return;}
+    function step(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur),e=1-Math.pow(1-p,3),v=Math.round(to*e);el.textContent=fmt?v.toLocaleString():v;if(p<1)requestAnimationFrame(step);}
+    requestAnimationFrame(step);
+  }
+
+  /* reveal observer */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll('[data-count]').forEach(countUp);if(e.target.matches('[data-count]'))countUp(e.target);io.unobserve(e.target);}});},{threshold:.18,rootMargin:'0px 0px -6% 0px'});
+  function arm(page){
+    page.querySelectorAll('.rv,.rv-l,.mask,[data-chart]').forEach(function(el){el.classList.remove('in');io.observe(el);});
+    page.querySelectorAll('[data-count]').forEach(function(el){delete el.dataset.done;el.textContent='0';if(!el.closest('.rv,[data-chart]'))io.observe(el);});
+  }
+
+  /* hero countdown 20 -> 6 */
+  function countdown(){
+    var el=document.getElementById('cd');if(!el)return;
+    if(reduce){el.textContent='6';return;}
+    var v=20;el.textContent=v;
+    var t=setInterval(function(){v--;el.textContent=v;if(v<=6)clearInterval(t);},70);
+  }
+
+  /* pager */
+  var pager=document.getElementById('pager');
+  function buildPager(id){
+    var i=ORDER.indexOf(id);
+    document.getElementById('evbar').style.display=(id==='sources')?'none':'';
+    if(id==='home'){pager.style.display='none';return;}
+    pager.style.display='';
+    var prev=ORDER[i-1],next=ORDER[i+1]||'home';
+    pager.innerHTML='<a href="#'+prev+'"><span class="k"><span class="ar">←</span> 前へ</span><span class="t">'+NAMES[prev]+'</span></a>'+
+                    '<a href="#'+next+'"><span class="k">次へ <span class="ar">→</span></span><span class="t">'+NAMES[next]+'</span></a>';
+  }
+
+  function show(id){
+    Object.keys(pages).forEach(function(k){pages[k].classList.toggle('show',k===id);});
+    document.querySelectorAll('.nav a').forEach(function(a){a.classList.toggle('on',a.dataset.r===id);});
+    var t=pages[id].dataset.title;document.title=(t?t+' ｜ ':'')+'美山 未来思考 — 学校が残れば、町は続く';
+    buildPager(id);window.scrollTo(0,0);arm(pages[id]);
+    if(id==='home')countdown();
+    if(id==='how')renderSim(false);
+    current=id;
+    try{gtag('event','page_view',{page_title:document.title,page_location:location.href.split('#')[0]+'#'+id,page_path:location.pathname+'#'+id});}catch(e){}
+    if(id==='sources'&&window.__jumpRef)setTimeout(window.__jumpRef,500);
+  }
+  function go(id){
+    if(!pages[id])id='home';
+    if(id===current||busy)return;
+    document.body.classList.remove('menu-open');document.getElementById('menuBtn').setAttribute('aria-expanded','false');
+    if(reduce||current===null){show(id);return;}
+    busy=true;cmark.textContent=NAMES[id];
+    curtain.className='curtain cover';
+    setTimeout(function(){show(id);curtain.className='curtain uncover';setTimeout(function(){curtain.className='curtain';busy=false;},700);},620);
+  }
+  function route(){go((location.hash||'#home').slice(1));}
+  window.addEventListener('hashchange',route);
+
+  /* menu */
+  document.getElementById('menuBtn').addEventListener('click',function(){var o=document.body.classList.toggle('menu-open');this.setAttribute('aria-expanded',o);});
+
+  /* progress bar */
+  var prog=document.getElementById('prog');
+  window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);prog.style.width=(p*100)+'%';},{passive:true});
+
+  /* in-page jump (timeline boxes) */
+  document.querySelectorAll('[data-scroll]').forEach(function(b){b.addEventListener('click',function(){
+    var t=document.getElementById(b.dataset.scroll);if(!t)return;
+    t.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+    t.classList.remove('flash');void t.offsetWidth;t.classList.add('flash');
+  });});
+
+  /* footnotes -> sources page item */
+  var pendingRef=null;
+  document.addEventListener('click',function(e){var f=e.target.closest('.fn');if(!f)return;e.preventDefault();pendingRef=f.dataset.ref;
+    if(current==='sources'){jumpRef();}else{location.hash='sources';}});
+  function jumpRef(){if(!pendingRef)return;var el=document.getElementById(pendingRef);pendingRef=null;if(!el)return;
+    el.closest('.refs').classList.add('in');setTimeout(function(){el.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash');},reduce?0:350);}
+  window.__jumpRef=jumpRef;
+
+  /* accordion */
+  document.querySelectorAll('#props button').forEach(function(b){b.addEventListener('click',function(){var li=b.parentElement,o=li.classList.toggle('open');b.setAttribute('aria-expanded',o);});});
+
+  /* simulator */
+  var S={h:5,b:7};
+  var $=function(i){return document.getElementById(i);};
+  var LB=['小1','小2','小3','小4','小5','小6','中1','中2','中3'];
+  $('grades').innerHTML=LB.map(function(l,i){return '<div><i style="height:0;background:'+(i<6?'#2E6662':'#8D86C4')+'"></i><span>'+l+'</span></div>';}).join('');
+  function tween(el,to,dec){var from=parseFloat(el.textContent)||0,t0=null;function s(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/600),e=1-Math.pow(1-p,3);el.textContent=(from+(to-from)*e).toFixed(dec);if(p<1)requestAnimationFrame(s);}requestAnimationFrame(s);}
+  function renderSim(pop){
+    var per=S.b+1.4*S.h,elem=Math.round(per*6),mid=Math.round(per*3);
+    $('vh').textContent=S.h;$('vb').textContent=S.b;
+    $('vk').textContent=(S.h*1.4).toFixed(1);
+    $('vs').textContent=(S.h*3.5/3250*100).toFixed(2);
+    $('vo').textContent=Math.round(S.h*3.5/32.5*100);
+    tween($('ve'),elem,0);tween($('vm'),mid,0);tween($('vp'),per,1);
+    $('fb').style.width=Math.min(100,elem/150*100)+'%';$('fbn').textContent=elem;
+    var hg=Math.min(100,per/25*100);
+    $('grades').querySelectorAll('i').forEach(function(i,k){setTimeout(function(){i.style.height=hg+'%';},k*40);});
+    var v=$('verdict');
+    if(per*2<=16){v.textContent='2学年の合計が16人以下：複式学級（2学年で1クラス）の目安に当たる水準です。';v.style.background='#F6DCCB';v.style.color='#7A3408';}
+    else if(elem<90){v.textContent='単学級は保てますが、1学年10人台。行事や部活動の維持が課題になります。';v.style.background='#EEEDF8';v.style.color='#3E3770';}
+    else{v.textContent='全学年の単学級を維持。小学生90人規模を保てる水準です。';v.style.background='#2E6662';v.style.color='#fff';}
+  }
+  document.querySelectorAll('#sim button[data-k]').forEach(function(b){b.addEventListener('click',function(){
+    var k=b.dataset.k,d=+b.dataset.v;S[k]=k==='h'?Math.max(0,Math.min(12,S[k]+d)):Math.max(1,Math.min(15,S[k]+d));
+    try{gtag('event','simulator_change',{param:k,value:S[k]});}catch(e){}
+    var el=$(k==='h'?'vh':'vb');el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop');renderSim(true);
+  });});
+
+  route();
+})();
+</script>
+<script type="module">
+/* BudouX: insert phrase-level break opportunities so Japanese never wraps mid-word (works in Safari/Firefox too) */
+try{
+  const {loadDefaultJapaneseParser}=await import('https://cdn.jsdelivr.net/npm/budoux@0.6.4/+esm');
+  const parser=loadDefaultJapaneseParser();
+  const SEL='h1,h2,h3,.h2,p,li,td,th,figcaption,.cap,.tt,.qq,.d,.k,.s,.lab,.mark,b,.bd span,.act-list span,.jc .who,.band b,.q';
+  const done=new Set();
+  document.querySelectorAll(SEL).forEach(el=>{
+    if(el.closest('svg,script,style'))return;
+    for(let p=el.parentElement;p;p=p.parentElement){if(done.has(p))return;}
+    try{parser.applyToElement(el);done.add(el);}catch(e){}
+  });
+}catch(e){/* CSS word-break:auto-phrase remains as fallback */}
+</script>
+</body>
+</html>
