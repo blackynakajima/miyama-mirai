@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blackynakajima.github.io/miyama-mirai/sitemap.xml
