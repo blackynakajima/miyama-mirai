@@ -65,7 +65,8 @@ button{font-family:inherit}
 :focus-visible{outline:3px solid var(--or);outline-offset:3px}
 
 /* ---------- header ---------- */
-.hd{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line)}
+.hd::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);z-index:-1}
 .hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
 .logo b{font-family:'Shippori Mincho B1',serif;font-size:19px;font-weight:800;letter-spacing:.04em}
@@ -89,8 +90,9 @@ button{font-family:inherit}
 .progress{position:absolute;left:0;bottom:-1px;height:3px;background:var(--or);width:0;transition:width .1s linear}
 @media (max-width:960px){
   .menu-btn{display:flex}
-  .nav{position:fixed;inset:68px 0 0 0;background:var(--teal);flex-direction:column;align-items:stretch;padding:24px clamp(20px,5vw,64px);gap:0;transform:translateY(-110%);transition:transform .5s var(--ease);z-index:40}
-  .menu-open .nav{transform:none}
+  .nav{position:fixed;top:68px;left:0;right:0;height:calc(100vh - 68px);height:calc(100dvh - 68px);overflow-y:auto;background:var(--teal);flex-direction:column;align-items:stretch;padding:24px clamp(20px,5vw,64px) 40px;gap:0;transform:translateY(-105%);visibility:hidden;transition:transform .5s var(--ease),visibility 0s linear .5s;z-index:40}
+  .menu-open .nav{transform:none;visibility:visible;transition:transform .5s var(--ease),visibility 0s}
+  .menu-open{overflow:hidden}
   .nav a{color:#fff;font-family:'Shippori Mincho B1',serif;font-size:22px;padding:14px 0;border-bottom:1px solid var(--teal-l)}
   .nav a::after{left:0;right:auto;width:60px;bottom:10px}
   .nav a.cta{margin:20px 0 0;text-align:center}
@@ -124,7 +126,7 @@ button{font-family:inherit}
 .lbl{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:var(--teal)}
 .h2{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(28px,4vw,44px);line-height:1.45;margin:0}
 .lead{font-size:16px;line-height:2.05;color:#3B4746;max-width:780px;margin:0}
-.sec{padding:clamp(64px,9vw,112px) 0}
+.sec{padding-top:clamp(64px,9vw,112px);padding-bottom:clamp(64px,9vw,112px)}
 .stack{display:flex;flex-direction:column;gap:14px}
 .grid{display:grid;gap:24px}
 .g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
@@ -146,7 +148,12 @@ button{font-family:inherit}
 .photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
 .photo:hover img{transform:scale(1.05)}
 .cap{font-size:13px;color:var(--mut);margin-top:10px}
-table.t{width:100%;border-collapse:collapse;font-size:14px;background:#fff}
+table.t{width:100%;min-width:640px;border-collapse:collapse;font-size:14px;background:#fff}
+table.t td,table.t th{overflow-wrap:normal}
+table.t td.n{white-space:nowrap}
+.tscroll{-webkit-overflow-scrolling:touch}
+@media (max-width:640px){.tscroll::after{content:"← 横にスクロールできます →";display:block;text-align:center;font-size:11px;color:var(--mut);padding:6px 0;background:var(--bg)}}
+@media (max-width:420px){.logo i{display:none}}
 table.t th,table.t td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 table.t th{background:var(--mint);font-weight:700;font-size:13px}
 table.t td.n{font-family:'Shippori Mincho B1',serif;font-weight:700;white-space:nowrap}
@@ -225,7 +232,7 @@ table.t tbody tr:hover{background:var(--lav-l)}
 .chart svg{width:100%;height:auto;overflow:visible;display:block}
 .chart svg text{paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round}
 /* Japanese line breaking: break at phrase boundaries, balance headings */
-body{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
+body{word-break:auto-phrase;line-break:strict;overflow-wrap:break-word}
 p,li,td,figcaption,.cap,.lead,.d,.qq,.verdict{text-wrap:pretty}
 h1,h2,h3,.h2,.tt,.ch-hero h1,.hero h1,b.mn,.mn b,.note b{text-wrap:balance}
 .nw{white-space:nowrap}
@@ -345,6 +352,8 @@ table.t td.hi{background:var(--or-l);font-weight:700}
 .simk>div:last-child{background:#fff;color:var(--ink)}
 .simk .k{font-size:12px;opacity:.85}
 .simk .v{font-family:'Shippori Mincho B1',serif;font-weight:800;font-size:clamp(32px,4vw,46px);line-height:1.2}
+.simk .v{white-space:nowrap}
+@media (max-width:560px){.simk>div{padding:12px}.simk .k{font-size:11px;line-height:1.5}.simk .v{font-size:28px}.sim{padding:18px}.stepper .val{font-size:42px;min-width:56px}}
 .hb{display:flex;align-items:center;gap:12px;font-size:13px}
 .hb .l{width:100px;flex:none;color:var(--mut)}
 .hb .tr{flex:1;height:22px;background:var(--mint)}
